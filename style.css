@@ -59,7 +59,6 @@ section h1 {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  margin-left: 2.3em;
 }
 
 .scrolling-wrapper .card {
