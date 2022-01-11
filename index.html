@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gheorghe Tarcea</title>
+</head>
+
+<body>
+  <main>
+    <section class="no-parallax">
+      <h1>Gheorghe Tarcea</h1>
+    </section>
+    <section class="parallax bg">
+      <div class="scrolling-wrapper">
+        <div class="card">
+          <h2>project 1</h2>
+        </div>
+        <div class="card">
+          <h2>project 2</h2>
+        </div>
+        <div class="card">
+          <h2>project 3</h2>
+        </div>
+        <div class="card">
+          <h2>project 4</h2>
+        </div>
+        <div class="card">
+          <h2>project 5</h2>
+        </div>
+        <div class="card">
+          <h2>project 6</h2>
+        </div>
+        <div class="card">
+          <h2>project 7</h2>
+        </div>
+        <div class="card">
+          <h2>project 8</h2>
+        </div>
+        <div class="card">
+          <h2>project 9</h2>
+        </div>
+      </div>
+    </section>
+    <section class="no-parallax">
+      <h1>I’m a tech enthusiast passionate about programming and how things work.</h1>
+    </section>
+    <section class="parallax bg">
+      <h1>My whole
+        professional life was in relation to technology</h1>
+    </section>
+    <section class="no-parallax">
+      <h1>Let's get in contact</h1>
+    </section>
+  </main>
+  <script>
+    const bg = document.querySelectorAll(".bg");
+    bg.forEach((b, i) => {
+      // b.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://picsum.photos/1080/720/?random=${i + 1}")`
+    })
+  </script>
+</body>
+
+</html>
