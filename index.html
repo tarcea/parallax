@@ -10,12 +10,17 @@
 </head>
 
 <body>
-  <main>
+  <main class="root">
+    <nav class="navbar__container">
+      <div class="navbar-top__menu">
+        menu
+      </div>
+    </nav>
     <section class="parallax bg">
       <h1>Gheorghe Tarcea</h1>
     </section>
     <section class="no-parallax">
-      <p>projects</p>
+      <p class="text--pink">projects</p>
       <div class="scrolling-wrapper">
         <div class="card">
           <h2>reminder App</h2>
@@ -48,31 +53,24 @@
     </section>
     <section class="parallax bg">
       <a href="https://github.com/tarcea">
-        <img align="center"
+        <img
           src="https://github-readme-stats.vercel.app/api?username=tarcea&count_private=true&show_icons=true&theme=dracula" />
       </a>
     </section>
     <section class="no-parallax">
-      <h1>I’m a tech enthusiast passionate about programming and how things work.</h1>
+      <h1>I’m a tech enthusiast passionate about <span class="text--pink">programming</span> and how things work.</h1>
     </section>
     <section class="parallax bg">
       <a href="https://github.com/tarcea">
-        <img align="center"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=tarcea&layout=compact&theme=dracula" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tarcea&layout=compact&theme=dracula" />
       </a>
     </section>
     <section class="no-parallax">
-      <!-- <h1>My whole
-        professional life was in relation to technology</h1> -->
-      <h1>Happy coding !!!</h1>
+      <p>Happy <span class="text--pink">coding</span></p>
+      <img src="http://ghchart.rshah.org/tarcea" alt="tarcea's Github chart" />
     </section>
   </main>
-  <script>
-    const bg = document.querySelectorAll(".bg");
-    bg.forEach((b, i) => {
-      // b.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://picsum.photos/1080/720/?random=${i + 1}")`
-    })
-  </script>
+  <script src="app.js"></script>
 </body>
 
 </html>
