@@ -1,9 +1,3 @@
-
-
-const myFunction = () => {
-  console.log("You scrolled in page");
-}
-
-const mainBody = document.querySelector(".root");
-console.log(mainBody)
-mainBody.onscroll = (() => myFunction());
+const currentYear = new Date().getFullYear();
+const copyright = document.querySelector('.copyright');
+copyright.innerHTML = `© Copyright ${currentYear} Gheorghe Tarcea`

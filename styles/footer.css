@@ -14,11 +14,20 @@
 .footer__links a {
   color: #282a36;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.7em;
   padding: 0px 10px;
   flex-grow: 4;
 }
 
 .footer__links a:hover {
   color: #F4F4F4;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  margin-top: 0.5em;
 }
