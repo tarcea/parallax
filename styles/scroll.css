@@ -21,14 +21,27 @@
 
 
 .card {
-  display: flex;
-  flex-direction: column;
+  width: 10em;
+  height: 7em;
+  background-color: rgba(253, 251, 251, 0.5);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em
 }
 
 
 @media screen and (min-width: 768px) {
   .scrolling-wrapper {
     margin-left: 0.3em;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5em
   }
 
 }

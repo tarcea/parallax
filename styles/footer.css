@@ -1,5 +1,5 @@
 .footer {
-  background: #F4F4F4;
+  /* background: #F4F4F4; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,7 +7,7 @@
   padding: 16px;
   color: rgba(0,0,0,0.3);
   justify-content: center;
-  background-color: rgb(241, 90, 138, 0.8);
+  background-color: rgb(241, 90, 138, 0.9);
   max-width: 100vw;
 }
 
@@ -20,5 +20,5 @@
 }
 
 .footer__links a:hover {
-  opacity: 0.5;
+  color: #F4F4F4;
 }
