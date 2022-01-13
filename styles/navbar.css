@@ -1,0 +1,14 @@
+.navbar__container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(241, 90, 138, 0.8);
+  height: 3.5em;
+  z-index: 1;
+}
+
+.navbar-top__menu {
+  padding: 10px 30px;
+  color: #fff;
+  height: 78px;
+}

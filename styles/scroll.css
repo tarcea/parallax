@@ -1,0 +1,38 @@
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper .card {
+    display: inline-block;
+    width: 20em;
+    height: 30em;
+    /* background-color: rgba(253, 251, 251, 0.5); */
+    text-align: center;
+    color: rgb(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+.card h2 {
+  font-weight: 100;
+  color: #f15a8a;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.text--pink {
+  color: rgb(241, 90, 138);
+}
+
+
+@media screen and (min-width: 768px) {
+  .scrolling-wrapper {
+    margin-left: 0.3em;
+  }
+
+}
