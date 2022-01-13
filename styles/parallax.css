@@ -16,6 +16,8 @@
 
 .parallax img {
   max-width: 90%;
+  height: 15em;
+  width: 25em;
   display: flex;
   margin: 0 auto;
 }
@@ -46,5 +48,6 @@
 
   .parallax img {
     height: 25em;
+    width: 55em;
   }
 }
