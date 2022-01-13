@@ -16,14 +16,15 @@
 
 .card h2 {
   font-weight: 100;
-  color: #f15a8a;
+  color: rgb(241, 90, 138);
 }
 
 
 .card {
   width: 10em;
   height: 7em;
-  background-color: rgba(253, 251, 251, 0.5);
+  background: rgb(244, 244, 244, 1);
+  /* background-color: rgba(253, 251, 251, 0.5); */
 }
 
 .projects {
