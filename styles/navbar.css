@@ -1,14 +1,28 @@
 .navbar__container {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   background: rgb(241, 90, 138, 0.8);
   height: 3.5em;
-  z-index: 1;
+  z-index: 199;
 }
 
-.navbar-top__menu {
-  padding: 10px 30px;
+.navbar-top__menu a {
   color: #fff;
-  height: 78px;
+}
+
+.navbar-top__menu a:hover {
+  color: #282a36;
+  text-decoration: underline;
+}
+
+.navbar-top__menu ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: auto 0;
+}
+
+.navbar-top__menu li{
+  margin-top: 1.25em
 }

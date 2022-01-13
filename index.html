@@ -13,14 +13,24 @@
   <main class="root">
     <nav class="navbar__container">
       <div class="navbar-top__menu">
-        menu
+        <ul>
+          <a href="#top">
+            <li>home</li>
+          </a>
+          <a href="#projects">
+            <li>projects</li>
+          </a>
+          <a href="#contact">
+            <li>contact</li>
+          </a>
+        </ul>
       </div>
     </nav>
-    <section class="parallax bg">
+    <section class="parallax bg" id="top">
       <h1>Gheorghe Tarcea</h1>
       <p>a tech enthusiast passionate about <span class="text--pink">programming</span> and how things work.</p>
     </section>
-    <section class="no-parallax">
+    <section class="no-parallax" id="projects">
       <div class="scrolling-wrapper">
         <a href="https://mycoolreminders.netlify.app" target="_new">
           <div class="card">
@@ -79,7 +89,7 @@
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tarcea&layout=compact&theme=dracula" />
       </a>
     </section>
-    <section class="no-parallax">
+    <section class="no-parallax" id="contact">
       <h1>Happy <span class="text--pink">coding</span></h1>
       <img src="https://ghchart.rshah.org/tarcea" alt="tarcea's Github chart" />
     </section>

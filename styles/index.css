@@ -12,11 +12,15 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 main {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 2px;
+  /* perspective: 2px; */
 }
 
 section {
@@ -31,7 +35,7 @@ section {
 
 section h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: sans-serif;
 }
 
