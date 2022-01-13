@@ -3,9 +3,11 @@
   z-index: 999;
 }
 
-.no-parallax p {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+.no-parallax {
+  /* writing-mode: vertical-rl;
+  text-orientation: upright; */
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .parallax {
@@ -14,16 +16,16 @@
   flex-direction: column;
 }
 
-.parallax p {
+/* .parallax p {
   text-align: center;
   font-weight: 300;
   max-width: 70%;
-}
+} */
 
-.parallax h1 {
+/* .parallax h1 {
   width: 60%;
   font-size: 3rem;
-}
+} */
 
 .no-parallax img {
   display: none;
