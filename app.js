@@ -6,7 +6,13 @@ const bgs = [
   'https://images.unsplash.com/photo-1588653818221-2651ec1a6423?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80'
 ];
 
+const rndInt = Math.floor(Math.random() * bgs.length) + 1;
+const bg = bgs[rndInt - 1]
+
+
+
+
 const currentYear = new Date().getFullYear();
 const copyright = document.querySelector('.copyright');
-copyright.innerHTML = `© Copyright ${currentYear} Gheorghe Tarcea`
+copyright.innerHTML = `© ${currentYear} Gheorghe Tarcea`
 
