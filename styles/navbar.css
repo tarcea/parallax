@@ -6,7 +6,7 @@
   background: #282a36;
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
   height: 3.5em;
-  z-index: 199;
+  z-index: 999;
 }
 
 .navbar-top__menu a {
