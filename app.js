@@ -15,6 +15,7 @@ const bg = bgs[rndInt - 1]
 const currentYear = new Date().getFullYear();
 const copyright = document.querySelector('.copyright');
 copyright.innerHTML = `© ${currentYear} Gheorghe Tarcea`
+
 let bg1;
 fetch('https://parallax-api-gt.herokuapp.com/', {
   mode: 'cors',
@@ -23,12 +24,10 @@ fetch('https://parallax-api-gt.herokuapp.com/', {
   .then(response => response.json())
   .then(data => bg1 = data.bg);
 
-console.log(bg)
 
 const myStyle = document.querySelector('style');
 myStyle.innerText = `.bg::after {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${bg});
   background-size: cover;
-}`
-console.log(myStyle) 
+}`;
