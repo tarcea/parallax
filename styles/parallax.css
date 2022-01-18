@@ -11,16 +11,12 @@
   flex-direction: column;
 }
 
-.no-parallax img {
-  display: none;
-}
-
 .parallax img {
-  max-width: 90%;
-  height: 15em;
-  width: 25em;
-  display: flex;
-  margin: 0 auto;
+  /* max-width: 90%; */
+  /* height: 15em; */
+  /* width: 25em; */
+  /* display: flex; */
+  /* margin: 0 auto; */
 }
 
 .parallax::after {
@@ -45,10 +41,5 @@
 
   .parallax h1 {
     font-size: 4rem;
-  }
-
-  .parallax img {
-    height: 25em;
-    width: 55em;
   }
 }
