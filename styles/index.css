@@ -61,7 +61,20 @@ section p {
     gap: 0.5em;
 }
 
+.contact__links a {
+  color: #F4F4F4 ;
+  font-size: 2rem;
+}
+
+.contact__links a:hover {
+  color:rgb(241, 90, 138);
+}
+
 @media screen and (min-width: 768px) {
+
+  .contact__links a {
+    font-size: 5rem;
+  }
 
   section h1 {
     font-size: 5rem;
