@@ -55,7 +55,7 @@ section p {
 }
 
 .icons {
-    color: #F4F4F4;
+    color: rgb(244, 244, 244);
     text-decoration: none;
     font-weight: 100;
     font-size: 2em;
@@ -75,13 +75,13 @@ section p {
 }
 
 .fa-chevron-circle-down {
-  color:rgb(241, 90, 138);
+  color:#F4F4F4;
   font-size: 2rem;
   padding-top: 1rem;
 }
 
 .fa-chevron-circle-up {
-  color:rgb(241, 90, 138);
+  color:#F4F4F4;
   font-size: 2rem;
   padding-bottom: 1rem;
 }
@@ -97,7 +97,8 @@ section p {
   }
 
   .icons {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    font-size: 3em;
 }
 
 }
