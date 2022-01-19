@@ -55,7 +55,7 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.5em
+  gap: 0.5em;
 }
 
 .card__description {
@@ -89,7 +89,8 @@
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.5em
+    gap: 0.5em;
+    padding: 2em 2em;
   }
 
   .card {
