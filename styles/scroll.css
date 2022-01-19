@@ -92,4 +92,21 @@
     gap: 0.5em
   }
 
+  .card {
+    width: 22em;
+    height: 8em;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    width: 26em;
+    height: 10em;
+  }
+
+  .card__description {
+    font-size: medium;
+  }
+
 }
