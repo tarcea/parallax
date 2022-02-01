@@ -23,7 +23,6 @@ copyright.innerHTML = `© ${currentYear} Gheorghe Tarcea`
 //   .then(response => response.json())
 //   .then(data => bg1 = data.bg);
 
-
 const myStyle = document.querySelector('style');
 myStyle.innerText = `.bg::after {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
