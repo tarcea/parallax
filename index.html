@@ -1,419 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="Gheorghe Tarcea" property="og:site_name">
-  <meta property="og:description" content="tech enthusiast passionate about programming and how things work">
-  <meta property="og:url" content="https://www.gheorghetarcea.com/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80">
-  <link rel="stylesheet" href="styles/index.css">
-  <title>Gheorghe Tarcea</title>
-  <style>
-  </style>
-</head>
-
-<body>
-  <main class="root">
-    <nav class="navbar__container">
-      <div class="navbar-top__menu">
-        <ul>
-          <a href="#top">
-            <li>home</li>
-          </a>
-          <a href="#projects">
-            <li>projects</li>
-          </a>
-          <a href="#about">
-            <li>about</li>
-          </a>
-          <a href="#contact">
-            <li>contact</li>
-          </a>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gheorghe Tarcea</title>
+  </head>
+  <body class="font-poppins">
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6 font-poppins">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-2">
+          <img src="img/logo.svg" alt="" />
+        </div>
+        <!-- Menu items -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Projects</a>
+          <a href="#" class="hover:text-darkGrayishBlue">TechStack</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+        </div>
+        <!-- Button -->
+        <a
+          href=""
+          class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+          >Get Started</a
+        >
+        <!-- hamburger icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#">Tech Stack</a>
+          <a href="#">Contact</a>
+        </div>
       </div>
     </nav>
-    <section class="parallax bg" id="top">
-      <h1>Gheorghe Tarcea</h1>
-      <p>a tech enthusiast passionate about <span class="text--pink">programming</span> and how things work.</p>
-    </section>
-    <section class="no-parallax" id="projects">
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="card">
-          <div class="card__title">Reminders (full-stack)</div>
-          <p class="card__description">With this application, you can create your own lists of tasks and
-            edit them together with your friends or family in real time.
+    <!-- Hero section -->
+    <section id="hero">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0"
+      >
+        <!-- left item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          >
+            Hello, I'm Gheorghe Tarcea
+          </h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            ... a tech enthusiast passionate about programming, logic challenges
+            and how things work.
           </p>
-          <div class="card__stack">
-            <i class="devicon-nodejs-plain"></i>
-            <i class="devicon-express-original"></i>
-            <i class="devicon-typescript-plain"></i>
-            <i class="devicon-mongodb-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-react-original"></i>
-            <i class="devicon-heroku-original"></i>
-          </div>
-          <div class="card__footer">
-            <a href="https://github.com/tarcea/reminders" target="_new"><i class="fab fa-github"></i></a>
-            <a href="https://mycoolreminders.netlify.app/" target="_new"><i class="fas fa-globe"></i></a>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href=""
+              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+              >About Me</a
+            >
           </div>
         </div>
-        <div class="card">
-          <div class="card__title">
-            Retro tracker (team, full-stack)</div>
-          <p class="card__description">This application helps teams log their retrospectives and track their progress
-            using predefined or customised templates.
-          </p>
-          <div class="card__stack">
-            <i class="devicon-nodejs-plain"></i>
-            <i class="devicon-express-original"></i>
-            <i class="devicon-postgresql-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-react-original"></i>
-            <i class="devicon-redux-original"></i>
-            <i class="devicon-heroku-original"></i>
-          </div>
-          <div class="card__footer">
-            <a href="https://github.com/Fjordie/retro-app" target="_new"><i class="fab fa-github"></i></a>
-            <a href="https://mob-retro.herokuapp.com/" target="_new"><i class="fas fa-globe"></i></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__title">Bookmarks</div>
-          <p class="card__description">This is a bookmark application for webpages where you can save your own
-            preferences as private or public bookmarks.
-          </p>
-          <div class="card__stack">
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-react-original"></i>
-            <i class="devicon-firebase-plain"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-css3-plain"></i>
-          </div>
-          <div class="card__footer">
-            <a href="https://github.com/tarcea/bookmark-auth" target="_new"><i class="fab fa-github"></i></a>
-            <a href="https://mycoolbookmark.web.app/" target="_new"><i class="fas fa-globe"></i></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__title">Bookshelf</div>
-          <p class="card__description">This is a demo application built in VueJS and using localStorage and
-            Firebase/Firestore to
-            manage books on a shelf.
-          </p>
-          <div class="card__stack">
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-vuejs-plain"></i>
-            <i class="devicon-firebase-plain"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-css3-plain"></i>
-          </div>
-          <div class="card__footer">
-            <a href="https://github.com/tarcea/book-shelf" target="_new"><i class="fab fa-github"></i></a>
-            <a href="https://book-shelf-two.vercel.app/" target="_new"><i class="fas fa-globe"></i></a>
-          </div>
-        </div>
-      </div>
-      <a href="#more-projects">
-        <i class="fas fa-chevron-circle-down"></i>
-      </a>
-    </section>
-    <section class="parallax bg">
-      <h1>Tech stack</h1>
-      <div class="icons">
-        <i class="devicon-postgresql-plain">
-          <p>postgresql</p>
-        </i>
-        <i class="devicon-javascript-plain">
-          <p>javascript</p>
-        </i>
-        <i class="devicon-heroku-original">
-          <p>heroku</p>
-        </i>
-        <i class="devicon-bootstrap-plain">
-          <p>bootstarp</p>
-        </i>
-        <i class="devicon-html5-plain">
-          <p>html5</p>
-        </i>
-        <i class="devicon-css3-plain">
-          <p>css3</p>
-        </i>
-        <i class="devicon-github-plain">
-          <p>github</p>
-        </i>
-        <i class="devicon-git-plain">
-          <p>git</p>
-        </i>
-        <!-- <i class="devicon-trello-plain"></i> -->
-        <!-- <i class="devicon-slack-plain"></i> -->
-        <i class="devicon-nodejs-plain">
-          <p>nodejs</p>
-        </i>
-        <i class="devicon-firebase-plain">
-          <p>firebase</p>
-        </i>
-        <i class="devicon-ruby-plain">
-          <p>ruby</p>
-        </i>
-        <i class="devicon-rails-plain">
-          <p>rails</p>
-        </i>
-        <i class="devicon-typescript-plain">
-          <p>typescript</p>
-        </i>
-        <i class="devicon-express-original">
-          <p>express</p>
-        </i>
-        <i class="devicon-docker-plain">
-          <p>docker</p>
-        </i>
-        <!-- <i class="devicon-figma-plain"></i> -->
-        <i class="devicon-graphql-plain">
-          <p>graphql</p>
-        </i>
-        <!-- <i class="devicon-handlebars-plain"></i> -->
-        <i class="devicon-jest-plain">
-          <p>jest</p>
-        </i>
-        <!-- <i class="devicon-jquery-plain"></i> -->
-        <i class="devicon-mocha-plain">
-          <p>mocha</p>
-        </i>
-        <i class="devicon-mongodb-plain">
-          <p>mongodb</p>
-        </i>
-        <i class="devicon-mysql-plain">
-          <p>mysql</p>
-        </i>
-        <!-- <i class="devicon-npm-original-wordmark"></i> -->
-        <!-- <i class="devicon-python-plain"></i> -->
-        <i class="devicon-react-original">
-          <p>react</p>
-        </i>
-        <i class="devicon-redux-original">
-          <p>redux</p>
-        </i>
-        <!-- <i class="devicon-sass-original"></i> -->
-        <i class="devicon-vuejs-plain">
-          <p>vuejs</p>
-        </i>
-        <!-- <i class="devicon-vscode-plain"></i> -->
-        <!-- <i class="devicon-webpack-plain"></i> -->
-        <!-- <i class="devicon-yarn-plain"></i> -->
-        <i class="devicon-amazonwebservices-original">
-          <p>aws</p>
-        </i>
-        <!-- <i class="devicon-babel-plain"></i> -->
-        <!-- <i class="devicon-bash-plain"></i> -->
-        <!-- <i class="devicon-filezilla-plain"></i> -->
-        <!-- <i class="devicon-gatsby-plain"></i> -->
-        <!-- <i class="devicon-jasmine-plain"></i> -->
-      </div>
-    </section>
-    <section class="no-parallax" id="more-projects">
-      <a href="#projects">
-        <i class="fas fa-chevron-circle-up"></i>
-      </a>
-      <p>...more projects</p>
-      <div class="projects">
-        <div class="card">
-          <div class="card__title">Link preview</div>
-          <p class="card__description">This application is a full-stack version of 'Bookmarks' project above, using file
-            system instead of a real data base.
-          </p>
-          <div class="card__stack">
-            <i class="devicon-nodejs-plain"></i>
-            <i class="devicon-express-original"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-react-original"></i>
-          </div>
-          <div class="card__footer">
-            <a href="https://github.com/tarcea/link-preview-api" target="_new"><i class="fab fa-github"></i></a>
-            <!-- <a href="" target="_new"><i class="fas fa-globe"></i></a> -->
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__title">Why Globuzzer</div>
-          <p class="card__description">This is a single page application built for Globuzzer company.
-          </p>
-          <div class="card__stack">
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-react-original"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-css3-plain"></i>
-          </div>
-          <div class="card__footer">
-            <a href="https://github.com/tarcea/why-globuzzer" target="_new"><i class="fab fa-github"></i></a>
-            <a href="https://tarcea.github.io/why-globuzzer/" target="_new"><i class="fas fa-globe"></i></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__title">Travel Worms (team, full-stack)</div>
-          <p class="card__description">
-            With this app you can find a translation of a certain book in a language of your choice.
-          </p>
-          <div class="card__stack">
-            <i class="devicon-postgresql-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-ruby-plain"></i>
-            <i class="devicon-rails-plain"></i>
-            <i class="devicon-heroku-original"></i>
-          </div>
-          <div class="card__footer">
-            <a href="https://github.com/Meden-Agan-27/travel-worms" target="_new"><i class="fab fa-github"></i></a>
-            <a href="https://travel-worms.herokuapp.com/" target="_new"><i class="fas fa-globe"></i></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__title">Rent a Pet (team, full-stack)</div>
-          <p class="card__description">We believe animals deserve the best care they can get. By fostering an animal,
-            you are preventing them from being sent to a pound where they are in a small enclosure for the duration of
-            their stay.
-          </p>
-          <div class="card__stack">
-            <i class="devicon-postgresql-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-ruby-plain"></i>
-            <i class="devicon-rails-plain"></i>
-            <i class="devicon-heroku-original"></i>
-          </div>
-          <div class="card__footer">
-            <a href="https://github.com/sano2019/rent-a-pet" target="_new"><i class="fab fa-github"></i></a>
-            <a href="https://stockholm376-rent-a-pet.herokuapp.com/" target="_new"><i class="fas fa-globe"></i></a>
-          </div>
+        <!-- image -->
+        <div class="md:w-1/2">
+          <img src="img/tarcea.jpeg" alt="" class="rounded-full" />
         </div>
       </div>
     </section>
-    <section class="parallax bg" id="about">
-      <h1>About</h1>
-      <p>
-        I’m a tech enthusiast passionate about programming, logic challenges and how things work.<br>My whole life I was
-        in relation to technology and I want to continue this way with focus now on software development.<br>I really
-        enjoy programming and I feel comfortable in both, back-end and front-end.
-      </p>
+    <!-- Tech Stack section -->
+    <section id="stack">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+      >
+        <!-- Main skills -->
+        <div class="flex flex-col space-y-12 md:w-1/2">
+          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+            My skills
+          </h2>
+          <!-- <p class="max-w-small text-center text-darkGrayishBlue md:text-left">
+            you can see here my top skills as a programmer
+          </p> -->
+          <div
+            class="md:ml-0 grid grid-cols-7 md:grid-cols-7 gap-4 mx-auto text-3xl"
+          >
+            <i
+              class="devicon-postgresql-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="PostgreSQL"
+            ></i>
+            <i
+              class="devicon-javascript-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="JavaScript"
+            ></i>
+            <i
+              class="devicon-heroku-original text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Heroku"
+            >
+            </i>
+            <i
+              class="devicon-bootstrap-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Bootstrap"
+            >
+            </i>
+            <i
+              class="devicon-html5-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="HTML"
+            >
+            </i>
+            <i
+              class="devicon-css3-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="CSS"
+            >
+            </i>
+            <i
+              class="devicon-github-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="GitHub"
+            >
+            </i>
+            <i
+              class="devicon-git-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Git"
+            >
+            </i>
+            <i
+              class="devicon-tailwindcss-plain hover:text-brightRed hover:cursor-crosshair"
+              title="TailwindCSS"
+            ></i>
+            <i
+              class="devicon-nodejs-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="NodeJS"
+            >
+            </i>
+            <i
+              class="devicon-firebase-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Firebase"
+            >
+            </i>
+            <i
+              class="devicon-ruby-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Ruby"
+            >
+            </i>
+            <i
+              class="devicon-rails-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Rails"
+            >
+            </i>
+            <i
+              class="devicon-typescript-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Typescript"
+            >
+            </i>
+            <i
+              class="devicon-express-original text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Express"
+            >
+            </i>
+            <i
+              class="devicon-docker-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Docker"
+            >
+            </i>
+            <i
+              class="devicon-graphql-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="GraphQL"
+            >
+            </i>
+            <i
+              class="devicon-jest-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Jest"
+            >
+            </i>
+            <i
+              class="devicon-mocha-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Mocha"
+            >
+            </i>
+            <i
+              class="devicon-mongodb-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="MongoDB"
+            >
+            </i>
+            <i
+              class="devicon-mysql-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="MySQL"
+            >
+            </i>
+            <i
+              class="devicon-react-original text-center hover:text-brightRed hover:cursor-crosshair"
+              title="React"
+            >
+            </i>
+            <i
+              class="devicon-redux-original text-center hover:text-brightRed hover:cursor-crosshair"
+              title="Redux"
+            >
+            </i>
+            <i
+              class="devicon-vuejs-plain text-center hover:text-brightRed hover:cursor-crosshair"
+              title="VueJS"
+            >
+            </i>
+            <i
+              class="devicon-amazonwebservices-original text-center hover:text-brightRed hover:cursor-crosshair"
+              title="AWS"
+            >
+            </i>
+          </div>
+        </div>
+        <!-- numbered list -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!-- list skill1-->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  BackEnd
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  NodeJs, PostgreSQL
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                NodeJs, PostgreSQL
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Express, Ruby on Rails, MongoDB, REST, GraphQL
+              </p>
+            </div>
+          </div>
+          <!-- list skill2-->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  FrontEnd
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  React, Redux
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                React, Redux
+              </h3>
+              <p class="text-darkGrayishBlue">
+                VueJS, Webpack, HTML, CSS, TailwindCSS, BEM
+              </p>
+            </div>
+          </div>
+          <!-- list skill3-->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  Test<span class="text-brightRed">Test</span>
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">Jest</h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">Jest</h3>
+              <p class="text-darkGrayishBlue">
+                Supertest, Mocha, Cypress, Webdriverio, Rspec
+              </p>
+            </div>
+          </div>
+          <!-- list skill4-->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  General
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Javascript, Typescript
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Javascript, Typescript
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Heroku, Git, GitHub, Firebase, Docker, AWS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="no-parallax" id="contact">
-      <div class="footer__links contact__links">
-        <a href="https://github.com/tarcea" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/ghtarcea/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/gheorghe.tarcea" target="_blank"><i class="fab fa-facebook"></i></a>
-        <!-- <a href="https://twitter.com/GheorgheTarcea" target="_blank"><i class="fab fa-twitter"></i></a> -->
-        <a href="https://www.linkedin.com/in/gheorghe-tarcea" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:contact@gheorghetarcea.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
-      </div>
-      <h1>Happy <span class="text--pink">coding</span></h1>
-      <div class="icons">
-        <i class="devicon-postgresql-plain">
-
-        </i>
-        <i class="devicon-javascript-plain">
-
-        </i>
-        <i class="devicon-heroku-original">
-
-        </i>
-        <i class="devicon-bootstrap-plain">
-
-        </i>
-        <i class="devicon-html5-plain">
-
-        </i>
-        <i class="devicon-css3-plain">
-
-        </i>
-        <i class="devicon-github-plain">
-
-        </i>
-        <i class="devicon-git-plain">
-
-        </i>
-        <!-- <i class="devicon-trello-plain"></i> -->
-        <!-- <i class="devicon-slack-plain"></i> -->
-        <i class="devicon-nodejs-plain">
-
-        </i>
-        <i class="devicon-firebase-plain">
-
-        </i>
-        <i class="devicon-ruby-plain">
-
-        </i>
-        <i class="devicon-rails-plain">
-
-        </i>
-        <i class="devicon-typescript-plain">
-
-        </i>
-        <i class="devicon-express-original">
-
-        </i>
-        <i class="devicon-docker-plain">
-
-        </i>
-        <!-- <i class="devicon-figma-plain"></i> -->
-        <i class="devicon-graphql-plain">
-
-        </i>
-        <!-- <i class="devicon-handlebars-plain"></i> -->
-        <i class="devicon-jest-plain">
-
-        </i>
-        <!-- <i class="devicon-jquery-plain"></i> -->
-        <i class="devicon-mocha-plain">
-
-        </i>
-        <i class="devicon-mongodb-plain">
-
-        </i>
-        <i class="devicon-mysql-plain">
-
-        </i>
-        <!-- <i class="devicon-npm-original-wordmark"></i> -->
-        <!-- <i class="devicon-python-plain"></i> -->
-        <i class="devicon-react-original">
-
-        </i>
-        <i class="devicon-redux-original">
-
-        </i>
-        <!-- <i class="devicon-sass-original"></i> -->
-        <i class="devicon-vuejs-plain">
-
-        </i>
-        <!-- <i class="devicon-vscode-plain"></i> -->
-        <!-- <i class="devicon-webpack-plain"></i> -->
-        <!-- <i class="devicon-yarn-plain"></i> -->
-        <i class="devicon-amazonwebservices-original">
-
-        </i>
-        <!-- <i class="devicon-babel-plain"></i> -->
-        <!-- <i class="devicon-bash-plain"></i> -->
-        <!-- <i class="devicon-filezilla-plain"></i> -->
-        <!-- <i class="devicon-gatsby-plain"></i> -->
-        <!-- <i class="devicon-jasmine-plain"></i> -->
+    <!-- projects -->
+    <section id="projects">
+      <!-- container to heading and projects blocks -->
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <!-- heading -->
+        <h2 class="text-4xl font-bold text-center">My projects</h2>
+        <!-- projects container -->
+        <div class="min-h-screen py-32 px-10 bg-veryLightGray">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 xl-grid-cols-4 gap-y-8 gap-x-6 bg-veryLightGray"
+          >
+            <!-- project1 -->
+            <div
+              class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300 relative"
+            >
+              <img
+                src="../img/mycoolreminders.netlify.app_lists_6284ded7247a5d1417ca437a(iPhone 5_SE).png"
+                alt=""
+                class="rounded-t-lg object-contain w-72 h-80 mx-auto pt-6"
+              />
+              <div class="p-6 mb-6">
+                <h1
+                  class="md:text-1xl text-l transition duration-200 font-bold text-gray-900 mb-2"
+                >
+                  Reminders (full-stack)
+                </h1>
+                <!-- icons for project stack -->
+                <div>
+                  <i class="devicon-nodejs-plain text-xl text-darkBlue"></i>
+                  <i class="devicon-express-original text-xl text-darkBlue"></i>
+                  <i class="devicon-typescript-plain text-xl text-darkBlue"></i>
+                  <i class="devicon-mongodb-plain text-xl text-darkBlue"></i>
+                  <i class="devicon-javascript-plain text-xl text-darkBlue"></i>
+                  <i class="devicon-react-original text-xl text-darkBlue"></i>
+                  <i class="devicon-heroku-original text-xl text-darkBlue"></i>
+                </div>
+                <p class="text-gray-700 my-2 text-xs">
+                  With this application, you can create your own lists of tasks
+                  and edit them together with your friends or family in real
+                  time.
+                </p>
+              </div>
+              <!-- icons for project links -->
+              <div class="absolute bottom-3 right-3">
+                <a href="https://github.com/tarcea/reminders" target="_new"
+                  ><i
+                    class="fab fa-github text-2xl text-darkBlue hover:text-brightRed"
+                  ></i
+                ></a>
+                <a href="https://mycoolreminders.netlify.app/" target="_new"
+                  ><i
+                    class="fas fa-globe text-2xl text-darkBlue hover:text-brightRed"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <!-- project2 -->
+            <div
+              class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300 relative"
+            >
+              <img
+                src="../img/mob-retro.herokuapp.com_(iPhone 5_SE).png"
+                alt=""
+                class="rounded-t-lg object-contain w-72 h-80 mx-auto pt-6"
+              />
+              <div class="p-6 mb-6">
+                <h1
+                  class="md:text-1xl text-l transition duration-200 font-bold text-gray-900 mb-2"
+                >
+                  Retro tracker (team, full-stack)
+                </h1>
+                <!-- icons for project stack -->
+                <div>
+                  <i class="devicon-nodejs-plain text-xl text-darkBlue"></i>
+                  <i class="devicon-express-original text-xl text-darkBlue"></i>
+                  <i class="devicon-postgresql-plain text-xl text-darkBlue"></i>
+                  <i class="devicon-javascript-plain text-xl text-darkBlue"></i>
+                  <i class="devicon-react-original text-xl text-darkBlue"></i>
+                  <i class="devicon-redux-original text-xl text-darkBlue"></i>
+                  <i class="devicon-heroku-original text-xl text-darkBlue"></i>
+                </div>
+                <p class="text-gray-700 my-2 text-xs">
+                  This application helps teams log their retrospectives and
+                  track their progress using predefined or customised templates.
+                </p>
+              </div>
+              <!-- icons for project links -->
+              <div class="absolute bottom-3 right-3">
+                <a href="https://github.com/Fjordie/retro-app" target="_new"
+                  ><i
+                    class="fab fa-github text-2xl text-darkBlue hover:text-brightRed"
+                  ></i
+                ></a>
+                <a href="https://mob-retro.herokuapp.com/" target="_new"
+                  ><i
+                    class="fas fa-globe text-2xl text-darkBlue hover:text-brightRed"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <!-- project3 -->
+            <div
+              class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300 relative"
+            >
+              <img
+                src="./img/mycoolbookmark.png"
+                alt=""
+                class="rounded-t-lg object-contain w-72 h-80 mx-auto pt-6"
+              />
+              <div class="p-6 mb-6">
+                <h1
+                  class="md:text-1xl text-l transition duration-200 font-bold text-gray-900 mb-2"
+                >
+                  Bookmarks
+                </h1>
+                <!-- icons for project stack -->
+                <div>
+                  <i class="devicon-javascript-plain text-xl text-darkBlue"></i>
+                  <i class="devicon-react-original text-xl text-darkBlue"></i>
+                  <i class="devicon-firebase-plain text-xl text-darkBlue"></i>
+                  <i class="devicon-html5-plain text-xl text-darkBlue"></i>
+                  <i class="devicon-css3-plain text-xl text-darkBlue"></i>
+                </div>
+                <p class="text-gray-700 my-2 text-xs">
+                  This is a bookmark application for webpages where you can save
+                  your own preferences as private or public bookmarks.
+                </p>
+              </div>
+              <!-- icons for project links -->
+              <div class="absolute bottom-3 right-3">
+                <a href="https://github.com/tarcea/bookmark-auth" target="_new"
+                  ><i
+                    class="fab fa-github text-2xl text-darkBlue hover:text-brightRed"
+                  ></i
+                ></a>
+                <a href="https://mycoolbookmark.web.app/" target="_new"
+                  ><i
+                    class="fas fa-globe text-2xl text-darkBlue hover:text-brightRed"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-16">
+          <!-- Button -->
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+            >Get Started</a
+          >
+        </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer__links">
-        <a href="https://github.com/tarcea" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/ghtarcea/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/gheorghe.tarcea" target="_blank"><i class="fab fa-facebook"></i></a>
-        <!-- <a href="https://twitter.com/GheorgheTarcea" target="_blank"><i class="fab fa-twitter"></i></a> -->
-        <a href="https://www.linkedin.com/in/gheorghe-tarcea" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:contact@gheorghetarcea.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+    <!-- call to action section -->
+    <section id="cta" class="bg-brightRed">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+      >
+        <!-- heading -->
+        <div
+          class="h2 text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"
+        >
+          Let's get in touch
+        </div>
+        <!-- Button -->
+        <div>
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
+            >Get Started</a
+          >
+        </div>
       </div>
-      <div class="copyright"></div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-veryDarkBlue">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!-- logo and social links -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+          <!-- logo -->
+          <div>
+            <img src="img/logo-white.svg" alt="" class="h-8" />
+          </div>
+          <!-- social links container -->
+          <div class="flex justify-center space-x-4">
+            <!-- link1 -->
+            <a href="https://github.com/tarcea" target="_blank"
+              ><i
+                class="fab fa-github text-white hover:text-brightRed text-3xl"
+              ></i
+            ></a>
+            <!-- link2 -->
+            <a href="https://www.instagram.com/ghtarcea/" target="_blank"
+              ><i
+                class="fab fa-instagram text-white hover:text-brightRed text-3xl"
+              ></i
+            ></a>
+            <!-- link3 -->
+            <a href="https://www.facebook.com/gheorghe.tarcea" target="_blank"
+              ><i
+                class="fab fa-facebook text-white hover:text-brightRed text-3xl"
+              ></i
+            ></a>
+            <!-- link4 -->
+            <a
+              href="https://www.linkedin.com/in/gheorghe-tarcea"
+              target="_blank"
+              ><i
+                class="fab fa-linkedin text-white hover:text-brightRed text-3xl"
+              ></i
+            ></a>
+            <!-- link5 -->
+            <a href="mailto:contact@gheorghetarcea.com" target="_blank"
+              ><i
+                class="fas fa-envelope-square text-white hover:text-brightRed text-3xl"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <!--  list container -->
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Home</a>
+            <a href="#" class="hover:text-brightRed">About</a>
+            <a href="#" class="hover:text-brightRed">Projects</a>
+            <a href="#" class="hover:text-brightRed">TechStack</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Contact</a>
+            <a href="#" class="hover:text-brightRed">More</a>
+            <a href="#" class="hover:text-brightRed">Projects</a>
+          </div>
+        </div>
+        <!-- input container -->
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="flex-1 px-4 rounded-full focus:outline-none"
+                placeholder="update in your inbox"
+              />
+              <button
+                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none"
+              >
+                Go
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+        </div>
+      </div>
     </footer>
-  </main>
-  <script src="app.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
