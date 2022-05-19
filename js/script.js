@@ -6,3 +6,9 @@ btn.addEventListener('click', () => {
   nav.classList.toggle('flex');
   nav.classList.toggle('hidden');
 });
+
+const currentYear = new Date().getFullYear();
+const copyright = document.querySelectorAll('.copyright');
+copyright.forEach((element) => {
+  element.innerHTML = `© ${currentYear} Gheorghe Tarcea`;
+});
