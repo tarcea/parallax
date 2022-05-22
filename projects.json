@@ -1,0 +1,83 @@
+[
+  {
+    "title": "Reminders (full-stack)",
+    "description": "With this application, you can create your own lists of tasks and edit them together with your friends or family in real time.",
+    "liveUrl": "https://mycoolreminders.netlify.app/",
+    "githubUrl": "https://github.com/tarcea/reminders",
+    "techStackIcons": [
+      "devicon-nodejs-plain",
+      "devicon-express-original",
+      "devicon-typescript-plain",
+      "devicon-mongodb-plain",
+      "devicon-javascript-plain",
+      "devicon-react-original",
+      "devicon-heroku-original"
+    ],
+    "projectImage": "mycoolreminders.netlify.app.png"
+  },
+  {
+    "title": "Retro tracker (team, full-stack)",
+    "description": "This application helps teams log their retrospectives and track their progress using predefined or customised templates.",
+    "liveUrl": "https://mob-retro.herokuapp.com/",
+    "githubUrl": "https://github.com/Fjordie/retro-app",
+    "techStackIcons": [
+      "devicon-nodejs-plain",
+      "devicon-express-original",
+      "devicon-postgresql-plain",
+      "devicon-javascript-plain",
+      "devicon-react-original",
+      "devicon-redux-original",
+      "devicon-heroku-original"
+    ],
+    "projectImage": "mob-retro.herokuapp.com.png"
+  },
+  {
+    "title": "Bookmarks",
+    "description": "This is a bookmark application for webpages where you can save your own preferences as private or public bookmarks.",
+    "liveUrl": "https://mycoolbookmark.web.app/",
+    "githubUrl": "https://github.com/tarcea/bookmark-auth",
+    "techStackIcons": [
+      "devicon-javascript-plain",
+      "devicon-react-original",
+      "devicon-firebase-plain",
+      "devicon-html5-plain",
+      "devicon-css3-plain"
+    ],
+    "projectImage": "mycoolbookmark.png"
+  },
+  {
+    "title": "Bookshelf",
+    "description": "This is a demo application built in VueJS and using localStorage and Firebase/Firestore to manage books on a shelf.",
+    "liveUrl": "https://book-shelf-two.vercel.app/",
+    "githubUrl": "https://github.com/tarcea/book-shelf",
+    "techStackIcons": [
+      "devicon-javascript-plain",
+      "devicon-vuejs-plain",
+      "devicon-firebase-plain",
+      "devicon-html5-plain",
+      "devicon-css3-plain"
+    ],
+    "projectImage": "book-shelf-two.vercel.app.png"
+  },
+  {
+    "title": "Why Globuzzer",
+    "description": "This is a single page application built for Globuzzer company.",
+    "liveUrl": "https://tarcea.github.io/why-globuzzer/",
+    "githubUrl": "https://github.com/tarcea/why-globuzzer",
+    "techStackIcons": [
+      "devicon-javascript-plain",
+      "devicon-react-original",
+      "devicon-html5-plain",
+      "devicon-css3-plain"
+    ],
+    "projectImage": "tarcea.github.io_why-globuzzer.png"
+  },
+  {
+    "title": "API-link-preview",
+    "description": "This is an API that generates a preview for a given URL.",
+    "liveUrl": "https://url-preview-gt.herokuapp.com/api?url=https://www.gheorghetarcea.com",
+    "githubUrl": "https://github.com/tarcea/api-link-preview-jsdom",
+    "techStackIcons": ["devicon-nodejs-plain", "devicon-express-original"],
+    "projectImage": "api-link-preview-jsdom.png"
+  }
+]
