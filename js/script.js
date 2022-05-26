@@ -24,7 +24,9 @@ fetch('../projects.json')
     return projects.forEach((project) => {
       let stack = '';
       project.techStackIcons.forEach((icon) => {
-        stack += `<i class="${icon} text-xl text-darkBlue"></i>`;
+        const title = icon.split('-')[1];
+        stack += `
+        <i class="${icon} text-xl text-darkBlue hover:text-brightRed hover:cursor-crosshair" title=${title}></i>`;
       });
       console.log(stack);
       projectsContainer.innerHTML += `

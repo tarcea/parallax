@@ -79,5 +79,17 @@
     "githubUrl": "https://github.com/tarcea/api-link-preview-jsdom",
     "techStackIcons": ["devicon-nodejs-plain", "devicon-express-original"],
     "projectImage": "api-link-preview-jsdom.png"
+  },
+  {
+    "title": "API-auth-postgreSQL",
+    "description": "This is an API for authentication and authorization using bcrypt and JWT",
+    "liveUrl": "https://auth-gt.herokuapp.com/",
+    "githubUrl": "https://github.com/tarcea/api-auth-postgres",
+    "techStackIcons": [
+      "devicon-nodejs-plain",
+      "devicon-express-original",
+      "devicon-postgresql-plain"
+    ],
+    "projectImage": "api-auth-postgres.png"
   }
 ]
