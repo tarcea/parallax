@@ -2,7 +2,7 @@
   {
     "title": "Reminders (full-stack)",
     "description": "With this application, you can create your own lists of tasks and edit them together with your friends or family in real time.",
-    "liveUrl": "https://mycoolreminders.netlify.app/",
+    "liveUrl": ["https://mycoolreminders.netlify.app/", "true"],
     "githubUrl": "https://github.com/tarcea/reminders",
     "techStackIcons": [
       "devicon-nodejs-plain",
@@ -18,7 +18,7 @@
   {
     "title": "Retro tracker (team, full-stack)",
     "description": "This application helps teams log their retrospectives and track their progress using predefined or customised templates.",
-    "liveUrl": "https://mob-retro.herokuapp.com/",
+    "liveUrl": ["https://mob-retro.herokuapp.com/", "true"],
     "githubUrl": "https://github.com/Fjordie/retro-app",
     "techStackIcons": [
       "devicon-nodejs-plain",
@@ -34,7 +34,7 @@
   {
     "title": "Bookmarks",
     "description": "This is a bookmark application for webpages where you can save your own preferences as private or public bookmarks.",
-    "liveUrl": "https://mycoolbookmark.web.app/",
+    "liveUrl": ["https://mycoolbookmark.web.app/", "true"],
     "githubUrl": "https://github.com/tarcea/bookmark-auth",
     "techStackIcons": [
       "devicon-javascript-plain",
@@ -48,7 +48,7 @@
   {
     "title": "Bookshelf",
     "description": "This is a demo application built in VueJS and using localStorage and Firebase/Firestore to manage books on a shelf.",
-    "liveUrl": "https://book-shelf-two.vercel.app/",
+    "liveUrl": ["https://book-shelf-two.vercel.app/", "true"],
     "githubUrl": "https://github.com/tarcea/book-shelf",
     "techStackIcons": [
       "devicon-javascript-plain",
@@ -62,7 +62,7 @@
   {
     "title": "Why Globuzzer",
     "description": "This is a single page application built for Globuzzer company.",
-    "liveUrl": "https://tarcea.github.io/why-globuzzer/",
+    "liveUrl": ["https://tarcea.github.io/why-globuzzer/", "true"],
     "githubUrl": "https://github.com/tarcea/why-globuzzer",
     "techStackIcons": [
       "devicon-javascript-plain",
@@ -75,7 +75,10 @@
   {
     "title": "API-link-preview",
     "description": "This is an API that generates a preview for a given URL.",
-    "liveUrl": "https://url-preview-gt.herokuapp.com/api?url=https://www.gheorghetarcea.com",
+    "liveUrl": [
+      "https://url-preview-gt.herokuapp.com/api?url=https://www.gheorghetarcea.com",
+      "true"
+    ],
     "githubUrl": "https://github.com/tarcea/api-link-preview-jsdom",
     "techStackIcons": ["devicon-nodejs-plain", "devicon-express-original"],
     "projectImage": "api-link-preview-jsdom.png"
@@ -83,7 +86,7 @@
   {
     "title": "API-auth-postgreSQL",
     "description": "This is an API for authentication and authorization using bcrypt and JWT",
-    "liveUrl": "https://auth-gt.herokuapp.com/",
+    "liveUrl": ["https://auth-gt.herokuapp.com/", "false"],
     "githubUrl": "https://github.com/tarcea/api-auth-postgres",
     "techStackIcons": [
       "devicon-nodejs-plain",

@@ -22,6 +22,7 @@ fetch('../projects.json')
   })
   .then((projects) => {
     return projects.forEach((project) => {
+      const showLiveIcon = project.liveUrl[1] === 'true';
       let stack = '';
       project.techStackIcons.forEach((icon) => {
         const title = icon.split('-')[1];
@@ -32,14 +33,25 @@ fetch('../projects.json')
       projectsContainer.innerHTML += `
       <div
         class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300 relative"
-      >
-        <a href=${project.liveUrl} target="_new">
+      >${
+        showLiveIcon
+          ? `
+      <a href=${project.liveUrl[0]} target="_new">
           <img
             src=${`../img/${project.projectImage}`}
             alt=""
             class="rounded-t-lg object-contain w-72 h-80 mx-auto pt-6"
           />
         </a>
+      `
+          : `
+      <img
+            src=${`../img/${project.projectImage}`}
+            alt=""
+            class="rounded-t-lg object-contain w-72 h-80 mx-auto pt-6"
+          />
+      `
+      }
         <div class="p-6 mb-6">
           <h1
             class="md:text-1xl text-l transition duration-200 font-bold text-gray-900 mb-2"
@@ -62,11 +74,18 @@ fetch('../projects.json')
             ></i
           ></a>
           <span class="w-1 h-8 px-4"></span>
-          <a href=${project.liveUrl} target="_new"
-            ><i
-              class="fas fa-globe text-2xl text-darkBlue hover:text-brightRed"
-            ></i
-          ></a>
+          ${
+            showLiveIcon
+              ? `
+          <a href=${project.liveUrl[0]} target="_new"
+          ><i
+            class="fas fa-globe text-2xl text-darkBlue hover:text-brightRed"
+          ></i
+        ></a>
+          `
+              : ''
+          }
+          
         </div>
       </div>
       `;
