@@ -111,8 +111,8 @@
   {
     "title": "API-Go-auth-JWT",
     "description": "API for authentication and authorization, using Golang, JWT and PostgreSQL",
-    "liveUrl": ["https://url-preview-gt.up.railway.app/", "false"],
-    "githubUrl": "https://github.com/tarcea/api-auth-postgres",
+    "liveUrl": ["", "false"],
+    "githubUrl": "https://github.com/tarcea/go-auth-jwt",
     "techStackIcons": [
       "devicon-go-original-wordmark",
       "devicon-postgresql-plain"
