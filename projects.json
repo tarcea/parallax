@@ -99,7 +99,7 @@
   {
     "title": "API-auth-postgreSQL",
     "description": "API for authentication and authorization, using bcrypt and JWT",
-    "liveUrl": ["https://url-preview-gt.up.railway.app/", "false"],
+    "liveUrl": ["https://auth-gt.up.railway.app/docs.html", "true"],
     "githubUrl": "https://github.com/tarcea/api-auth-postgres",
     "techStackIcons": [
       "devicon-nodejs-plain",
