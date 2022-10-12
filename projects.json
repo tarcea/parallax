@@ -107,5 +107,16 @@
       "devicon-postgresql-plain"
     ],
     "projectImage": "api-auth-postgres.png"
+  },
+  {
+    "title": "API-Go-auth-JWT",
+    "description": "API for authentication and authorization, using Golang, JWT and PostgreSQL",
+    "liveUrl": ["https://url-preview-gt.up.railway.app/", "false"],
+    "githubUrl": "https://github.com/tarcea/api-auth-postgres",
+    "techStackIcons": [
+      "devicon-go-original-wordmark",
+      "devicon-postgresql-plain"
+    ],
+    "projectImage": "api-auth-go.png"
   }
 ]
