@@ -89,7 +89,7 @@
     "title": "API-link-preview",
     "description": "API that generates a preview for a given URL.",
     "liveUrl": [
-      "https://url-preview-gt.herokuapp.com/api?url=https://www.gheorghetarcea.com",
+      "https://url-preview-gt.up.railway.app/api?url=https://www.gheorghetarcea.com",
       "true"
     ],
     "githubUrl": "https://github.com/tarcea/api-link-preview-jsdom",
@@ -99,7 +99,7 @@
   {
     "title": "API-auth-postgreSQL",
     "description": "API for authentication and authorization, using bcrypt and JWT",
-    "liveUrl": ["https://auth-gt.herokuapp.com/", "false"],
+    "liveUrl": ["https://url-preview-gt.up.railway.app/", "false"],
     "githubUrl": "https://github.com/tarcea/api-auth-postgres",
     "techStackIcons": [
       "devicon-nodejs-plain",
