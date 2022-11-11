@@ -1,18 +1,5 @@
 [
   {
-    "title": "Bookmarks (full-stack)",
-    "description": "This is a bookmark application for webpages where you can save your own preferences as private or public bookmarks.",
-    "liveUrl": ["https://mycoolbookmark.vercel.app/", "true"],
-    "githubUrl": "https://github.com/tarcea/bookmark-next-ts",
-    "techStackIcons": [
-      "devicon-nextjs-original",
-      "devicon-mongodb-plain",
-      "devicon-typescript-plain",
-      "devicon-tailwindcss-plain"
-    ],
-    "projectImage": "mycoolbookmark.vercel.app.png"
-  },
-  {
     "title": "Tasks tracker (full-stack)",
     "description": "With this application, you can create your own lists of tasks and edit them together with your friends or family in real time.",
     "liveUrl": ["https://mycoolreminders.netlify.app/", "true"],
