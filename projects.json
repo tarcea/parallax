@@ -76,7 +76,7 @@
     "title": "API-link-preview",
     "description": "API that generates a preview for a given URL.",
     "liveUrl": [
-      "https://url-preview-gt.up.railway.app/api?url=https://www.gheorghetarcea.com",
+      "https://real-gold-jellyfish-boot.cyclic.app/api?url=https://www.gheorghetarcea.com",
       "true"
     ],
     "githubUrl": "https://github.com/tarcea/api-link-preview-jsdom",
