@@ -1,11 +1,19 @@
 const btn = document.getElementById('menu-btn');
 const nav = document.getElementById('menu');
 const projectsContainer = document.getElementById('prj-container');
+const skillsIcons = document.getElementById('skills-icons');
+const mySkills = document.getElementById('my-skills');
 
 btn.addEventListener('click', () => {
   btn.classList.toggle('open');
   nav.classList.toggle('flex');
   nav.classList.toggle('hidden');
+});
+// console.log(skillsIcons.children, typeof skillsIcons);
+skillsIcons.childNodes.forEach((icon) => {
+  icon.addEventListener('click', () => {
+    mySkills.innerHTML = icon.title;
+  });
 });
 
 const currentYear = new Date().getFullYear();
@@ -29,7 +37,7 @@ fetch('../projects.json')
         stack += `
         <i class="${icon} text-xl text-darkBlue hover:text-brightRed hover:cursor-crosshair" title=${title}></i>`;
       });
-      console.log(stack);
+
       projectsContainer.innerHTML += `
       <div
         class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300 relative"
