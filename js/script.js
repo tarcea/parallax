@@ -9,7 +9,7 @@ btn.addEventListener('click', () => {
   nav.classList.toggle('flex');
   nav.classList.toggle('hidden');
 });
-// console.log(skillsIcons.children, typeof skillsIcons);
+
 skillsIcons.childNodes.forEach((icon) => {
   icon.addEventListener('click', () => {
     mySkills.innerHTML = icon.title;
@@ -24,10 +24,6 @@ copyright.forEach((element) => {
 
 const cardTemplate = ``;
 
-const showTitle = (title) => {
-  console.log(title);
-};
-
 fetch('../projects.json')
   .then((response) => {
     return response.json();
@@ -41,7 +37,6 @@ fetch('../projects.json')
         stack += `
         <i class="${icon} text-xl text-darkBlue hover:text-brightRed hover:cursor-crosshair" title=${title}></i>`;
       });
-      // stack.addEventListener('click', showTitle(title));
 
       projectsContainer.innerHTML += `
       <div
