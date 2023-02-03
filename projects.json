@@ -1,5 +1,6 @@
 [
   {
+    "id": "001",
     "title": "Tasks tracker (full-stack)",
     "description": "With this application, you can create your own lists of tasks and edit them together with your friends or family in real time.",
     "liveUrl": ["https://mycoolreminders.netlify.app/", "true"],
@@ -16,6 +17,7 @@
     "projectImage": "mycoolreminders.netlify.app.png"
   },
   {
+    "id": "002",
     "title": "Retro tracker (team, full-stack)",
     "description": "This application helps teams log their retrospectives and track their progress using predefined or customised templates.",
     "liveUrl": ["https://mob-retro.herokuapp.com/", "true"],
@@ -32,6 +34,7 @@
     "projectImage": "mob-retro.herokuapp.com.png"
   },
   {
+    "id": "003",
     "title": "Bookmarks",
     "description": "This is a bookmark application for webpages where you can save your own preferences as private or public bookmarks.",
     "liveUrl": ["https://mycoolbookmark.web.app/", "true"],
@@ -46,6 +49,7 @@
     "projectImage": "mycoolbookmark.png"
   },
   {
+    "id": "004",
     "title": "Bookshelf",
     "description": "This is a demo application built in VueJS and using localStorage and Firebase/Firestore to manage books on a shelf.",
     "liveUrl": ["https://book-shelf-two.vercel.app/", "true"],
@@ -60,6 +64,7 @@
     "projectImage": "book-shelf-two.vercel.app.png"
   },
   {
+    "id": "005",
     "title": "Why Globuzzer",
     "description": "This is a single page application built for Globuzzer company.",
     "liveUrl": ["https://tarcea.github.io/why-globuzzer/", "true"],
@@ -73,6 +78,7 @@
     "projectImage": "tarcea.github.io_why-globuzzer.png"
   },
   {
+    "id": "006",
     "title": "API-link-preview",
     "description": "API that generates a preview for a given URL.",
     "liveUrl": [
@@ -84,6 +90,7 @@
     "projectImage": "api-link-preview-jsdom.png"
   },
   {
+    "id": "007",
     "title": "API-auth-postgreSQL",
     "description": "API for authentication and authorization, using bcrypt and JWT",
     "liveUrl": ["https://auth-gt.up.railway.app/docs.html", "true"],
@@ -96,6 +103,7 @@
     "projectImage": "api-auth-postgres.png"
   },
   {
+    "id": "008",
     "title": "API-Go-auth-JWT",
     "description": "API for authentication and authorization, using Golang, JWT and PostgreSQL",
     "liveUrl": ["", "false"],

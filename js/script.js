@@ -24,6 +24,10 @@ copyright.forEach((element) => {
 
 const cardTemplate = ``;
 
+const showTitle = (title) => {
+  console.log(title);
+};
+
 fetch('../projects.json')
   .then((response) => {
     return response.json();
@@ -37,6 +41,7 @@ fetch('../projects.json')
         stack += `
         <i class="${icon} text-xl text-darkBlue hover:text-brightRed hover:cursor-crosshair" title=${title}></i>`;
       });
+      // stack.addEventListener('click', showTitle(title));
 
       projectsContainer.innerHTML += `
       <div
@@ -67,7 +72,7 @@ fetch('../projects.json')
           ${project.title}
           </h1>
           <!-- icons for project stack -->
-          <div class="flex flex-row justify-center space-x-4">
+          <div class="flex flex-row justify-center space-x-4" id=${`stack-${project.id}`}>
           ${stack}
           </div>
           <p class="text-gray-700 my-2 text-xs">
