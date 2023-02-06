@@ -6,17 +6,18 @@ const mySkills = document.getElementById('my-skills');
 const avatar = document.getElementById('avatar');
 const footerMessage = document.getElementById('footer-message');
 const messages = [
-  ['happy', 'coding'],
-  ['show', 'time'],
+  ['work', 'hard'],
   ['stay', 'true'],
   ['live', 'life'],
   ['think', 'big'],
   ['keep', 'learning'],
   ['stay', 'inspired'],
+  ['stay', 'strong'],
+  ['think', 'big'],
 ];
 
 const generateRandomNumber = () => {
-  return Math.floor(Math.random() * 6);
+  return Math.floor(Math.random() * 8);
 };
 
 footerMessage.addEventListener('click', () => {
