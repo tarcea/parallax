@@ -4,6 +4,26 @@ const projectsContainer = document.getElementById('prj-container');
 const skillsIcons = document.getElementById('skills-icons');
 const mySkills = document.getElementById('my-skills');
 const avatar = document.getElementById('avatar');
+const footerMessage = document.getElementById('footer-message');
+const messages = [
+  ['happy', 'coding'],
+  ['show', 'time'],
+  ['stay', 'true'],
+  ['live', 'life'],
+  ['think', 'big'],
+  ['keep', 'learning'],
+  ['stay', 'inspired'],
+];
+
+const generateRandomNumber = () => {
+  return Math.floor(Math.random() * 6);
+};
+
+footerMessage.addEventListener('click', () => {
+  const i = generateRandomNumber();
+  footerMessage.innerHTML = `${messages[i][0]} <span class="text-darkBlue">${messages[i][1]}</span>`;
+});
+
 let count = 0;
 avatar.addEventListener('click', () => {
   avatar.setAttribute(
