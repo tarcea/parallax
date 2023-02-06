@@ -3,6 +3,15 @@ const nav = document.getElementById('menu');
 const projectsContainer = document.getElementById('prj-container');
 const skillsIcons = document.getElementById('skills-icons');
 const mySkills = document.getElementById('my-skills');
+const avatar = document.getElementById('avatar');
+let count = 0;
+avatar.addEventListener('click', () => {
+  avatar.setAttribute(
+    'src',
+    `https://picsum.photos/450/450?grayscale&random=${count}`
+  );
+  count += 1;
+});
 
 btn.addEventListener('click', () => {
   btn.classList.toggle('open');
