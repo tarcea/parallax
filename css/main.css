@@ -518,6 +518,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 1.5rem;
 }
 
+.left-180 {
+  left: 180px;
+}
+
+.bottom-15 {
+  bottom: 15px;
+}
+
 .bottom-3 {
   bottom: 0.75rem;
 }

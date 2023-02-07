@@ -22,6 +22,12 @@ module.exports = {
       fontFamily: {
         poppins: ['"Poppins"', 'sans-serif'],
       },
+
+      inset: {
+        '-10': '-10px',
+        180: '180px',
+        15: '15px',
+      },
     },
   },
   plugins: [],
