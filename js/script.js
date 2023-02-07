@@ -5,6 +5,7 @@ const skillsIcons = document.getElementById('skills-icons');
 const mySkills = document.getElementById('my-skills');
 const avatar = document.getElementById('avatar');
 const footerMessage = document.getElementById('footer-message');
+const toggleColor = document.getElementById('toggle-color');
 const messages = [
   ['work', 'hard'],
   ['stay', 'true'],
