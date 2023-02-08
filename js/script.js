@@ -6,6 +6,7 @@ const mySkills = document.getElementById('my-skills');
 const avatar = document.getElementById('avatar');
 const footerMessage = document.getElementById('footer-message');
 const toggleColor = document.getElementById('toggle-color');
+
 const messages = [
   ['work', 'hard'],
   ['stay', 'true'],
@@ -16,6 +17,10 @@ const messages = [
   ['stay', 'strong'],
   ['think', 'big'],
 ];
+
+toggleColor.addEventListener('click', (e) => {
+  e.target.innerHTML = `<span style="font-size:small"}>OnPicISaid!</span>`;
+});
 
 const generateRandomNumber = () => {
   return Math.floor(Math.random() * 8);
@@ -33,6 +38,7 @@ avatar.addEventListener('click', () => {
     `https://picsum.photos/450/450?grayscale&random=${count}`
   );
   count += 1;
+  toggleColor.innerHTML = `<span style="font-size:small"}>YouGotIt!</span>`;
 });
 
 btn.addEventListener('click', () => {
