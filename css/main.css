@@ -518,8 +518,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 1.5rem;
 }
 
-.left-167 {
-  left: 167px;
+.left-178 {
+  left: 178px;
 }
 
 .bottom-15 {
@@ -598,10 +598,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -612,10 +608,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-72 {
