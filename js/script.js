@@ -19,7 +19,10 @@ const messages = [
 ];
 
 toggleColor.addEventListener('click', (e) => {
-  e.target.innerHTML = `<span style="font-size:small"}>OnPicISaid!</span>`;
+  e.target.innerHTML =
+    e.target.innerHTML === 'YouGotIt!'
+      ? `clickOnPic`
+      : `<span style="font-size:small"}>OnPicISaid!</span>`;
 });
 
 const generateRandomNumber = () => {
@@ -38,7 +41,7 @@ avatar.addEventListener('click', () => {
     `https://picsum.photos/450/450?grayscale&random=${count}`
   );
   count += 1;
-  toggleColor.innerHTML = `<span style="font-size:small"}>YouGotIt!</span>`;
+  toggleColor.innerHTML = `<span>YouGotIt!</span>`;
 });
 
 btn.addEventListener('click', () => {
