@@ -20,7 +20,7 @@ const messages = [
 
 toggleColor.addEventListener('click', (e) => {
   e.target.innerHTML =
-    e.target.innerHTML === 'YouGotIt!'
+    e.target.innerHTML === 'YouGotit!'
       ? `clickOnPic`
       : `<span style="font-size:small"}>OnPicISaid!</span>`;
 });
@@ -41,7 +41,7 @@ avatar.addEventListener('click', () => {
     `https://picsum.photos/450/450?grayscale&random=${count}`
   );
   count += 1;
-  toggleColor.innerHTML = `<span>YouGotIt!</span>`;
+  toggleColor.innerHTML = `<span>YouGotit!</span>`;
 });
 
 btn.addEventListener('click', () => {
