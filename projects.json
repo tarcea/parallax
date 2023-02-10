@@ -14,7 +14,8 @@
       "devicon-react-original",
       "devicon-heroku-original"
     ],
-    "projectImage": "mycoolreminders.netlify.app.png"
+    "projectImage": "mycoolreminders.netlify.app.png",
+    "repo": "github"
   },
   {
     "id": "002",
@@ -31,7 +32,8 @@
       "devicon-redux-original",
       "devicon-heroku-original"
     ],
-    "projectImage": "mob-retro.herokuapp.com.png"
+    "projectImage": "mob-retro.herokuapp.com.png",
+    "repo": "github"
   },
   {
     "id": "003",
@@ -46,7 +48,8 @@
       "devicon-html5-plain",
       "devicon-css3-plain"
     ],
-    "projectImage": "mycoolbookmark.png"
+    "projectImage": "mycoolbookmark.png",
+    "repo": "github"
   },
   {
     "id": "004",
@@ -61,7 +64,8 @@
       "devicon-html5-plain",
       "devicon-css3-plain"
     ],
-    "projectImage": "book-shelf-two.vercel.app.png"
+    "projectImage": "book-shelf-two.vercel.app.png",
+    "repo": "github"
   },
   {
     "id": "005",
@@ -75,7 +79,8 @@
       "devicon-html5-plain",
       "devicon-css3-plain"
     ],
-    "projectImage": "tarcea.github.io_why-globuzzer.png"
+    "projectImage": "tarcea.github.io_why-globuzzer.png",
+    "repo": "github"
   },
   {
     "id": "006",
@@ -87,7 +92,8 @@
     ],
     "githubUrl": "https://github.com/tarcea/api-link-preview-jsdom",
     "techStackIcons": ["devicon-nodejs-plain", "devicon-express-original"],
-    "projectImage": "api-link-preview-jsdom.png"
+    "projectImage": "api-link-preview-jsdom.png",
+    "repo": "github"
   },
   {
     "id": "007",
@@ -100,7 +106,8 @@
       "devicon-express-original",
       "devicon-postgresql-plain"
     ],
-    "projectImage": "api-auth-postgres.png"
+    "projectImage": "api-auth-postgres.png",
+    "repo": "github"
   },
   {
     "id": "008",
@@ -112,6 +119,17 @@
       "devicon-go-original-wordmark",
       "devicon-postgresql-plain"
     ],
-    "projectImage": "api-auth-go.png"
+    "projectImage": "api-auth-go.png",
+    "repo": "github"
+  },
+  {
+    "id": "009",
+    "title": "QR Code Generator",
+    "description": "App that generate a QR code from a given URL",
+    "liveUrl": ["https://mycoolqr.vercel.app/", "true"],
+    "githubUrl": "https://github.com/tarcea/go-auth-jwt",
+    "techStackIcons": ["devicon-javascript-plain", "devicon-tailwindcss-plain"],
+    "projectImage": "mycoolqr.png",
+    "repo": "gitlab"
   }
 ]

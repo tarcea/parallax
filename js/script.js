@@ -117,10 +117,14 @@ fetch('../projects.json')
         <!-- icons for project links -->
         <div class="absolute bottom-3 right-3">
           <a href=${project.githubUrl} target="_new"
-            ><i
-              class="fab fa-github text-2xl text-darkBlue hover:text-brightRed"
+            >
+            <i
+              class="fab fa-${
+                project.repo
+              } text-2xl text-darkBlue hover:text-brightRed"
             ></i
-          ></a>
+          >
+          </a>
           <span class="w-1 h-8 px-4"></span>
           ${
             showLiveIcon
