@@ -62,6 +62,14 @@ copyright.forEach((element) => {
   element.innerHTML = `© ${currentYear} Gheorghe Tarcea`;
 });
 
+const generateQR = (url, size) => {
+  return new QRCode('qrcode', {
+    text: url,
+    width: size,
+    height: size,
+  });
+};
+
 const cardTemplate = ``;
 
 fetch('../projects.json')
