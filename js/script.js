@@ -3,9 +3,24 @@ const nav = document.getElementById('menu');
 const projectsContainer = document.getElementById('prj-container');
 const skillsIcons = document.getElementById('skills-icons');
 const mySkills = document.getElementById('my-skills');
+const rollingSkills = document.getElementById('rolling-skills');
 const avatar = document.getElementById('avatar');
 const footerMessage = document.getElementById('footer-message');
 const toggleColor = document.getElementById('toggle-color');
+const skillsArray = Array.from(skillsIcons.children).map(
+  (child) => child.title
+);
+
+const rollSkills = (skillsArray) => {
+  for (let i = 0; i < skillsArray.length; i++) {
+    (function (i) {
+      setTimeout(function () {
+        rollingSkills.innerHTML = skillsArray[i];
+      }, 2000 * i);
+    })(i);
+  }
+};
+rollSkills(skillsArray);
 
 const messages = [
   ['work', 'hard'],
