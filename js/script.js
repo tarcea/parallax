@@ -12,9 +12,10 @@ const skillsArray = Array.from(skillsIcons.children).map(
 );
 
 const rollSkills = (skillsArray) => {
+  skillsArray.push('');
   for (let i = 0; i < skillsArray.length; i++) {
-    (function (i) {
-      setTimeout(function () {
+    ((i) => {
+      setTimeout(() => {
         rollingSkills.innerHTML = skillsArray[i];
       }, 2000 * i);
     })(i);
