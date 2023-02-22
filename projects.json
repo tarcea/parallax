@@ -21,7 +21,7 @@
     "id": "002",
     "title": "Retro tracker (team, full-stack)",
     "description": "This application helps teams log their retrospectives and track their progress using predefined or customised templates.",
-    "liveUrl": ["https://mob-retro.herokuapp.com/", "true"],
+    "liveUrl": ["https://mob-retro.herokuapp.com/", "false"],
     "githubUrl": "https://github.com/Fjordie/retro-app",
     "techStackIcons": [
       "devicon-nodejs-plain",

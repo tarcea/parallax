@@ -105,25 +105,17 @@ fetch('../projects.json')
       projectsContainer.innerHTML += `
       <div
         class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300 relative"
-      >${
-        showLiveIcon
-          ? `
-      <a href=${project.liveUrl[0]} target="_new">
+      >${`
+      <a href=${
+        showLiveIcon ? project.liveUrl[0] : project.githubUrl
+      } target="_new">
           <img
             src=${`../img/${project.projectImage}`}
             alt=""
             class="rounded-t-lg object-contain w-72 h-80 mx-auto pt-6"
           />
         </a>
-      `
-          : `
-      <img
-            src=${`../img/${project.projectImage}`}
-            alt=""
-            class="rounded-t-lg object-contain w-72 h-80 mx-auto pt-6"
-          />
-      `
-      }
+      `}
         <div class="p-6 mb-6">
           <h1
             class="md:text-1xl text-l transition duration-200 font-bold text-gray-900 mb-2"
