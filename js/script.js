@@ -7,6 +7,7 @@ const rollingSkills = document.getElementById('rolling-skills');
 const avatar = document.getElementById('avatar');
 const footerMessage = document.getElementById('footer-message');
 const toggleColor = document.getElementById('toggle-color');
+
 const skillsArray = Array.from(skillsIcons.children).map(
   (child) => child.title
 );
@@ -17,7 +18,7 @@ const rollSkills = (skillsArray) => {
     ((i) => {
       setTimeout(() => {
         rollingSkills.innerHTML = skillsArray[i];
-      }, 2000 * i);
+      }, 3000 * i);
     })(i);
   }
 };
