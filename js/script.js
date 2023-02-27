@@ -13,7 +13,8 @@ const skillsArray = Array.from(skillsIcons.children).map(
 );
 
 const rollSkills = (skillsArray) => {
-  skillsArray.push('');
+  skillsArray.push('My Skills');
+  skillsArray.unshift('My Skills');
   for (let i = 0; i < skillsArray.length; i++) {
     ((i) => {
       setTimeout(() => {
