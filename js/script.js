@@ -137,7 +137,7 @@ fetch('../projects.json')
           <a href=${project.githubUrl} target="_new"
             >
             <i
-              class="fab fa-${
+              class="fa-brands fa-${
                 project.repo
               } text-2xl text-darkBlue hover:text-brightRed"
             ></i
