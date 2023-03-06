@@ -135,5 +135,18 @@
     ],
     "projectImage": "mycoolqr.png",
     "repo": "gitlab"
+  },
+  {
+    "id": "010",
+    "title": "API - GoRobot",
+    "description": " This API returns the position of a robot on a grid",
+    "liveUrl": [
+      "https://go-robot.onrender.com/game?width=5&deep=5&orientation=N&x=1&y=2&command=RFRFFRFRF",
+      "true"
+    ],
+    "githubUrl": "https://github.com/tarcea/go-robot-api",
+    "techStackIcons": ["devicon-go-original-wordmark"],
+    "projectImage": "gorobotapi.png",
+    "repo": "github"
   }
 ]
