@@ -34,6 +34,7 @@ const messages = [
   ['stay', 'inspired'],
   ['stay', 'strong'],
   ['think', 'big'],
+  ['pay', 'your interns'],
 ];
 
 toggleColor.addEventListener('click', (e) => {
@@ -44,7 +45,7 @@ toggleColor.addEventListener('click', (e) => {
 });
 
 const generateRandomNumber = () => {
-  return Math.floor(Math.random() * 8);
+  return Math.floor(Math.random() * 9);
 };
 
 footerMessage.addEventListener('click', () => {
