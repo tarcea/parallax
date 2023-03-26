@@ -23,7 +23,7 @@ const rollSkills = (skillsArray) => {
     })(i);
   }
 };
-rollSkills(skillsArray);
+// rollSkills(skillsArray);
 
 const messages = [
   ['work', 'hard'],
@@ -71,7 +71,10 @@ btn.addEventListener('click', () => {
 
 skillsIcons.childNodes.forEach((icon) => {
   icon.addEventListener('click', () => {
-    mySkills.innerHTML = icon.title;
+    rollingSkills.innerHTML = icon.title;
+    setTimeout(() => {
+      rollingSkills.innerHTML = 'My Skills';
+    }, 2000);
   });
 });
 
