@@ -69,10 +69,12 @@ btn.addEventListener('click', () => {
   nav.classList.toggle('hidden');
 });
 
+let timeoutId;
 skillsIcons.childNodes.forEach((icon) => {
   icon.addEventListener('click', () => {
     rollingSkills.innerHTML = icon.title;
-    setTimeout(() => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
       rollingSkills.innerHTML = 'My Skills';
     }, 2000);
   });
