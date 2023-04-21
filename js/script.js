@@ -32,8 +32,8 @@ const messages = [
   ['think', 'big'],
   ['keep', 'learning'],
   ['stay', 'inspired'],
-  ['stay', 'strong'],
   ['travel', 'safe'],
+  ['stay', 'strong'],
   ['pay', 'your interns'],
 ];
 
