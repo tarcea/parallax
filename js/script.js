@@ -35,6 +35,7 @@ const messages = [
   ['travel', 'safe'],
   ['stay', 'strong'],
   ['pay', 'your interns'],
+  ['be', 'kind'],
 ];
 
 toggleColor.addEventListener('click', (e) => {
