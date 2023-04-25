@@ -46,12 +46,12 @@ toggleColor.addEventListener('click', (e) => {
       : `<span style="font-size:small"}>OnPicISaid!</span>`;
 });
 
-const generateRandomNumber = () => {
-  return Math.floor(Math.random() * 9);
+const generateRandomNumber = (max) => {
+  return Math.floor(Math.random() * max);
 };
 
 footerMessage.addEventListener('click', () => {
-  const i = generateRandomNumber();
+  const i = generateRandomNumber(messages.length);
   footerMessage.innerHTML = `${messages[i][0]} <span class="text-darkBlue">${messages[i][1]}</span>`;
 });
 
