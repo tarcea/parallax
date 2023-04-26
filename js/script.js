@@ -12,19 +12,6 @@ const skillsArray = Array.from(skillsIcons.children).map(
   (child) => child.title
 );
 
-const rollSkills = (skillsArray) => {
-  skillsArray.push('My Skills');
-  skillsArray.unshift('My Skills');
-  for (let i = 0; i < skillsArray.length; i++) {
-    ((i) => {
-      setTimeout(() => {
-        rollingSkills.innerHTML = skillsArray[i];
-      }, 3000 * i);
-    })(i);
-  }
-};
-// rollSkills(skillsArray);
-
 const messages = [
   ['work', 'hard'],
   ['stay', 'true'],
@@ -39,13 +26,6 @@ const messages = [
   ['show', 'empathy'],
   ['practice makes', 'perfect'],
 ];
-
-toggleColor.addEventListener('click', (e) => {
-  e.target.innerHTML =
-    e.target.innerHTML === 'YouGotit!'
-      ? `clickOnPic`
-      : `<span style="font-size:small"}>OnPicISaid!</span>`;
-});
 
 const generateRandomNumber = (max) => {
   return Math.floor(Math.random() * max);
@@ -63,7 +43,6 @@ avatar.addEventListener('click', () => {
     `https://picsum.photos/450/450?grayscale&random=${count}`
   );
   count += 1;
-  toggleColor.innerHTML = `<span>YouGotit!</span>`;
 });
 
 btn.addEventListener('click', () => {
