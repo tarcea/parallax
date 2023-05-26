@@ -127,7 +127,7 @@
     "title": "QR Code Generator",
     "description": "App that generate a QR code from a given URL",
     "liveUrl": ["https://mycoolqr.vercel.app/", "true"],
-    "githubUrl": "https://github.com/tarcea/go-auth-jwt",
+    "githubUrl": "https://gitlab.com/tarcea/qr-code-generator",
     "techStackIcons": [
       "devicon-html5-plain",
       "devicon-javascript-plain",
