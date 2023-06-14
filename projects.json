@@ -17,6 +17,16 @@
   },
   {
     "id": "002",
+    "title": "Bookmarks v02",
+    "description": "Another way of displaying my bookmarks from the previous project...",
+    "liveUrl": ["https://vite-react-cards.vercel.app/", "true"],
+    "githubUrl": "https://github.com/tarcea/vite-react-cards",
+    "techStackIcons": ["devicon-react-original"],
+    "projectImage": "bookmarkv20.png",
+    "repo": "github"
+  },
+  {
+    "id": "003",
     "title": "Tasks tracker (full-stack)",
     "description": "With this application, you can create your own lists of tasks and edit them together with your friends or family in real time.",
     "liveUrl": ["https://mycoolreminders.netlify.app/", "true"],
@@ -34,7 +44,7 @@
     "repo": "github"
   },
   {
-    "id": "003",
+    "id": "004",
     "title": "Retro tracker (team, full-stack)",
     "description": "This application helps teams log their retrospectives and track their progress using predefined or customised templates.",
     "liveUrl": ["https://mob-retro.herokuapp.com/", "false"],
@@ -52,7 +62,7 @@
     "repo": "github"
   },
   {
-    "id": "004",
+    "id": "005",
     "title": "Bookshelf",
     "description": "This is a demo application built in VueJS and using localStorage and Firebase/Firestore to manage books on a shelf.",
     "liveUrl": ["https://book-shelf-two.vercel.app/", "true"],
@@ -68,7 +78,7 @@
     "repo": "github"
   },
   {
-    "id": "005",
+    "id": "006",
     "title": "Why Globuzzer",
     "description": "This is a single page application built for Globuzzer company.",
     "liveUrl": ["https://tarcea.github.io/why-globuzzer/", "true"],
@@ -83,7 +93,7 @@
     "repo": "github"
   },
   {
-    "id": "006",
+    "id": "007",
     "title": "API-link-preview",
     "description": "API that generates a preview for a given URL.",
     "liveUrl": [
@@ -96,7 +106,7 @@
     "repo": "github"
   },
   {
-    "id": "007",
+    "id": "008",
     "title": "API-auth-postgreSQL",
     "description": "API for authentication and authorization, using bcrypt and JWT",
     "liveUrl": ["https://auth-gt.up.railway.app/docs.html", "true"],
@@ -110,7 +120,7 @@
     "repo": "github"
   },
   {
-    "id": "008",
+    "id": "009",
     "title": "API-Go-auth-JWT",
     "description": "API for authentication and authorization, using Golang, JWT and PostgreSQL",
     "liveUrl": ["", "false"],
@@ -123,7 +133,7 @@
     "repo": "github"
   },
   {
-    "id": "009",
+    "id": "010",
     "title": "QR Code Generator",
     "description": "App that generate a QR code from a given URL",
     "liveUrl": ["https://mycoolqr.vercel.app/", "true"],
@@ -137,7 +147,7 @@
     "repo": "gitlab"
   },
   {
-    "id": "010",
+    "id": "011",
     "title": "API - GoRobot",
     "description": " This API returns the position of a robot on a grid",
     "liveUrl": [
