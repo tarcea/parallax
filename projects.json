@@ -17,7 +17,7 @@
   },
   {
     "id": "002",
-    "title": "Bookmarks v02",
+    "title": "Bookmarks 2.0",
     "description": "Another way to display my bookmarks from the previous project...",
     "liveUrl": ["https://vite-react-cards.vercel.app/", "true"],
     "githubUrl": "https://github.com/tarcea/vite-react-cards",
