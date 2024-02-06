@@ -150,3 +150,31 @@ fetch('../projects.json')
       `;
     });
   });
+
+  // get info based on the client IP
+
+  const parseData = (data) => {
+    let r = '';
+    const keys = Object.keys(data);
+    keys.forEach((key) => {
+      r += `
+      <li><b>${key}:</b> <em>${JSON.stringify(data[key])}</em></li>
+      `;
+    });
+    return r;
+  };
+
+  const clientInfo = document.getElementById('clientInfo');
+
+  fetch('https://api.ipify.org?format=json')
+  .then((response) => response.json())
+  .then((data) =>
+    fetch(`https://wakeful-bronze-beret.glitch.me/?ip=${data.ip}`)
+  )
+  .then((resp) => resp.json())
+  .then((d) => {
+  console.log(d.data.emoji_flag)
+  clientInfo.innerHTML = `
+          ${d.data.emoji_flag}
+          `;
+  });
