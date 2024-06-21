@@ -1,533 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <meta content="Gheorghe Tarcea" property="og:site_name" />
-    <meta
-      property="og:description"
-      content="tech enthusiast passionate about programming and how things work"
-    />
-    <meta property="og:url" content="https://www.gheorghetarcea.com/" />
-    <!-- <meta
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+  <meta content="Gheorghe Tarcea" property="og:site_name" />
+  <meta property="og:description" content="tech enthusiast passionate about programming and how things work" />
+  <meta property="og:url" content="https://www.gheorghetarcea.com/" />
+  <!-- <meta
       property="og:image"
       content="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
     /> -->
-    <meta property="og:image" content="/img/tarcea.jpeg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="/img/favicon1.svg" type="image/x-icon">
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
-      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="js/script.js" defer></script>
-    <title>Gheorghe Tarcea</title>
-  </head>
-  <body class="font-poppins">
-    <!-- Navbar -->
-    <nav class="relative container mx-auto p-6 font-poppins" id="home">
-      <!-- Flex container -->
-      <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <div class="pt-2">
-          <img src="img/logo.svg" alt="" />
-        </div>
-        <!-- Menu items -->
-        <div class="hidden md:flex space-x-6">
-          <!-- <a href="#home" class="hover:text-darkGrayishBlue">Home</a> -->
-          <a href="#about" class="hover:text-darkGrayishBlue">About</a>
-          <a href="#projects" class="hover:text-darkGrayishBlue">Projects</a>
-          <a href="#stack" class="hover:text-darkGrayishBlue">TechStack</a>
-          <a href="#contact" class="hover:text-darkGrayishBlue">Contact</a>
-        </div>
-        <!-- Button -->
-        <a
-          href="#projects"
-          class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-          >My projects</a
-        >
-        <!-- hamburger icon -->
-        <button
-          id="menu-btn"
-          class="block hamburger md:hidden focus:outline-none"
-        >
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </button>
+  <meta property="og:image" content="/img/tarcea.jpeg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="/img/favicon1.svg" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js" defer></script>
+  <title>Gheorghe Tarcea</title>
+</head>
+
+<body class="font-poppins">
+  <!-- Navbar -->
+  <nav class="relative container mx-auto p-6 font-poppins" id="home">
+    <!-- Flex container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="img/logo.svg" alt="" />
       </div>
-      <!-- mobile menu -->
-      <div class="md:hidden">
-        <div
-          id="menu"
-          class="z-50 absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-        >
-          <!-- <a href="#">Home</a> -->
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#stack">Tech Stack</a>
-          <a href="#contact">Contact</a>
+      <!-- Menu items -->
+      <div class="hidden md:flex space-x-6">
+        <!-- <a href="#home" class="hover:text-darkGrayishBlue">Home</a> -->
+        <a href="#about" class="hover:text-darkGrayishBlue">About</a>
+        <a href="#projects" class="hover:text-darkGrayishBlue">Projects</a>
+        <a href="#stack" class="hover:text-darkGrayishBlue">TechStack</a>
+        <a href="#contact" class="hover:text-darkGrayishBlue">Contact</a>
+      </div>
+      <!-- Button -->
+      <a href="#projects"
+        class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">My
+        projects</a>
+      <!-- hamburger icon -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+    <!-- mobile menu -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="z-50 absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <!-- <a href="#">Home</a> -->
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero section -->
+  <section id="hero">
+    <!-- flex container -->
+    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+      <!-- left item -->
+      <div class="flex flex-col mb-32 space-y-12 md:w-1/2" id="about">
+        <h1 class="max-w-md text-4xl font-bold text-center text-darkBlue md:text-5xl md:text-left">
+          Gheorghe Tarcea
+        </h1>
+        <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+          ... a tech enthusiast passionate about programming, logic challenges
+          and how things work.
+        </p>
+        <div class="flex justify-center md:justify-start">
+          <a href="#contact"
+            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get in
+            contact</a>
         </div>
       </div>
-    </nav>
-    <!-- Hero section -->
-    <section id="hero">
-      <!-- flex container -->
-      <div
-        class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0"
-      >
-        <!-- left item -->
-        <div class="flex flex-col mb-32 space-y-12 md:w-1/2" id="about">
-          <h1
-            class="max-w-md text-4xl font-bold text-center text-darkBlue md:text-5xl md:text-left"
-          >
-            Gheorghe Tarcea
-          </h1>
-          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
-            ... a tech enthusiast passionate about programming, logic challenges
-            and how things work.
+      <!-- image -->
+      <div class="relative md:w-1/2">
+        <img src="img/cut-and-run-rat.png" alt="" class="rounded-full hover:grayscale hover:cursor-pointer"
+          id="avatar" />
+
+        <div class="absolute left-178 bottom-15">
+          <p class="p-3 text-center text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight hidden"
+            id="toggle-color">
+            clickOnPic
           </p>
-          <div class="flex justify-center md:justify-start">
-            <a
-              href="#contact"
-              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-              >Get in contact</a
-            >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tech Stack section -->
+  <section id="stack">
+    <!-- flex container -->
+    <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+      <!-- Main skills -->
+      <div class="flex flex-col space-y-12 md:w-1/2">
+        <h2 id="rolling-skills" class="max-w-md text-4xl font-bold text-center mb-8 text-darkBlue md:text-left">
+          My skills
+        </h2>
+        <div class="md:ml-0 grid grid-cols-7 md:grid-cols-7 gap-4 mx-auto text-3xl" id="skills-icons">
+          <i class="devicon-postgresql-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="PostgreSQL"></i>
+          <i class="devicon-javascript-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="JavaScript"></i>
+          <i class="devicon-heroku-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Heroku">
+          </i>
+          <i class="devicon-bootstrap-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Bootstrap">
+          </i>
+          <i class="devicon-html5-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="HTML">
+          </i>
+          <i class="devicon-css3-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer" title="CSS">
+          </i>
+          <i class="devicon-github-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="GitHub">
+          </i>
+          <i class="devicon-gitlab-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="GitLab">
+          </i>
+          <i class="devicon-git-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer" title="Git">
+          </i>
+          <i class="devicon-tailwindcss-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="TailwindCSS"></i>
+          <i class="devicon-nodejs-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="NodeJS">
+          </i>
+          <i class="devicon-firebase-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Firebase">
+          </i>
+          <i class="devicon-ruby-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Ruby">
+          </i>
+          <i class="devicon-rails-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Rails">
+          </i>
+          <i class="devicon-typescript-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Typescript">
+          </i>
+          <i class="devicon-express-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Express">
+          </i>
+          <i class="devicon-docker-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Docker">
+          </i>
+          <i class="devicon-graphql-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="GraphQL">
+          </i>
+          <i class="devicon-jest-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Jest">
+          </i>
+          <i class="devicon-mocha-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Mocha">
+          </i>
+          <i class="devicon-rspec-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Rspec">
+          </i>
+          <i class="devicon-mongodb-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="MongoDB">
+          </i>
+          <i class="devicon-mysql-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="MySQL">
+          </i>
+          <i class="devicon-react-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="React">
+          </i>
+          <i class="devicon-redux-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Redux">
+          </i>
+          <i class="devicon-vuejs-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="VueJS">
+          </i>
+          <i class="devicon-amazonwebservices-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="AWS">
+          </i>
+          <i class="devicon-go-original-wordmark text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Golang">
+          </i>
+          <i class="devicon-nestjs-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="NestJS">
+          </i>
+          <i class="devicon-python-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Python">
+          </i>
+          <i class="devicon-googlecloud-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
+            title="Google Cloud">
+          </i>
+        </div>
+
+      </div>
+      <!-- numbered list -->
+      <div class="flex flex-col space-y-8 md:w-1/2">
+        <!-- list skill1-->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- heading -->
+          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                BackEnd
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden">
+                Node, PostgreSQL
+              </h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="hidden mb-4 text-lg font-bold md:block">
+              NodeJs, PostgreSQL
+            </h3>
+            <p class="text-darkGrayishBlue">
+              Express, NestJS, Go, Python, Ruby&Rails, MongoDB, REST, GraphQL, gRPC, Elasticsearch, Prisma
+            </p>
           </div>
         </div>
-        <!-- image -->
-        <div class="relative md:w-1/2">
-          <img src="img/tarcea.jpeg" alt="" class="rounded-full" id="avatar" />
-          
-          <div class="absolute left-178 bottom-15">
-            <p 
-              class="p-3 text-center text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight hidden"
-              id="toggle-color"
-              >
-              clickOnPic
+        <!-- list skill2-->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- heading -->
+          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                FrontEnd
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden">
+                React, Redux
+              </h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="hidden mb-4 text-lg font-bold md:block">
+              React, Redux
+            </h3>
+            <p class="text-darkGrayishBlue">
+              VueJS, NextJS, Webpack, HTML, CSS, TailwindCSS, BEM
+            </p>
+          </div>
+        </div>
+        <!-- list skill3-->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- heading -->
+          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                Test<span class="text-brightRed">Test</span>
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden">Jest</h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="hidden mb-4 text-lg font-bold md:block">Jest</h3>
+            <p class="text-darkGrayishBlue">
+              Supertest, Mocha, Cypress, Webdriverio, Rspec
+            </p>
+          </div>
+        </div>
+        <!-- list skill4-->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- heading -->
+          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                General
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden">
+                JS, Typescript
+              </h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="hidden mb-4 text-lg font-bold md:block">
+              Javascript, Typescript
+            </h3>
+            <p class="text-darkGrayishBlue">
+              Heroku, Git, GitHub, GitLab, Firebase, Docker, Google Cloud
             </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Tech Stack section -->
-    <section id="stack">
-      <!-- flex container -->
-      <div
-        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
-      >
-        <!-- Main skills -->
-        <div class="flex flex-col space-y-12 md:w-1/2">
-          <h2
-          id="rolling-skills"
-            class="max-w-md text-4xl font-bold text-center mb-8 text-darkBlue md:text-left"
-            
-          >
-            My skills
-          </h2>
-          <div
-            class="md:ml-0 grid grid-cols-7 md:grid-cols-7 gap-4 mx-auto text-3xl"
-            id="skills-icons"
-          >
-            <i
-              class="devicon-postgresql-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="PostgreSQL"
-            ></i>
-            <i
-              class="devicon-javascript-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="JavaScript"
-            ></i>
-            <i
-              class="devicon-heroku-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Heroku"
-            >
-            </i>
-            <i
-              class="devicon-bootstrap-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Bootstrap"
-            >
-            </i>
-            <i
-              class="devicon-html5-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="HTML"
-            >
-            </i>
-            <i
-              class="devicon-css3-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="CSS"
-            >
-            </i>
-            <i
-              class="devicon-github-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="GitHub"
-            >
-            </i>
-            <i
-              class="devicon-gitlab-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="GitLab"
-            >
-            </i>
-            <i
-              class="devicon-git-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Git"
-            >
-            </i>
-            <i
-              class="devicon-tailwindcss-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="TailwindCSS"
-            ></i>
-            <i
-              class="devicon-nodejs-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="NodeJS"
-            >
-            </i>
-            <i
-              class="devicon-firebase-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Firebase"
-            >
-            </i>
-            <i
-              class="devicon-ruby-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Ruby"
-            >
-            </i>
-            <i
-              class="devicon-rails-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Rails"
-            >
-            </i>
-            <i
-              class="devicon-typescript-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Typescript"
-            >
-            </i>
-            <i
-              class="devicon-express-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Express"
-            >
-            </i>
-            <i
-              class="devicon-docker-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Docker"
-            >
-            </i>
-            <i
-              class="devicon-graphql-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="GraphQL"
-            >
-            </i>
-            <i
-              class="devicon-jest-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Jest"
-            >
-            </i>
-            <i
-              class="devicon-mocha-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Mocha"
-            >
-            </i>
-            <i
-              class="devicon-rspec-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Rspec"
-            >
-            </i>
-            <i
-              class="devicon-mongodb-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="MongoDB"
-            >
-            </i>
-            <i
-              class="devicon-mysql-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="MySQL"
-            >
-            </i>
-            <i
-              class="devicon-react-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="React"
-            >
-            </i>
-            <i
-              class="devicon-redux-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Redux"
-            >
-            </i>
-            <i
-              class="devicon-vuejs-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="VueJS"
-            >
-            </i>
-            <i
-              class="devicon-amazonwebservices-original text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="AWS"
-            >
-            </i>
-            <i
-              class="devicon-go-original-wordmark text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-              title="Golang"
-            >
-            </i>
-            <i
-            class="devicon-nestjs-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-            title="NestJS"
-          >
-          </i>
-          <i
-            class="devicon-python-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-            title="Python"
-          >
-          </i>
-          <i
-          class="devicon-googlecloud-plain text-center text-darkBlue hover:text-brightRed hover:cursor-pointer"
-          title="Google Cloud"
-        >
-        </i>
-          </div>
-         
-        </div>
-        <!-- numbered list -->
-        <div class="flex flex-col space-y-8 md:w-1/2">
-          <!-- list skill1-->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <!-- heading -->
-            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  BackEnd
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  Node, PostgreSQL
-                </h3>
-              </div>
-            </div>
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
-                NodeJs, PostgreSQL
-              </h3>
-              <p class="text-darkGrayishBlue">
-                Express, NestJS, Go, Python, Ruby&Rails, MongoDB, REST, GraphQL, gRPC, Elasticsearch, Prisma
-              </p>
-            </div>
-          </div>
-          <!-- list skill2-->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <!-- heading -->
-            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  FrontEnd
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  React, Redux
-                </h3>
-              </div>
-            </div>
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
-                React, Redux
-              </h3>
-              <p class="text-darkGrayishBlue">
-                VueJS, NextJS, Webpack, HTML, CSS, TailwindCSS, BEM
-              </p>
-            </div>
-          </div>
-          <!-- list skill3-->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <!-- heading -->
-            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  Test<span class="text-brightRed">Test</span>
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">Jest</h3>
-              </div>
-            </div>
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">Jest</h3>
-              <p class="text-darkGrayishBlue">
-                Supertest, Mocha, Cypress, Webdriverio, Rspec
-              </p>
-            </div>
-          </div>
-          <!-- list skill4-->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <!-- heading -->
-            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  General
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  JS, Typescript
-                </h3>
-              </div>
-            </div>
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
-                Javascript, Typescript
-              </h3>
-              <p class="text-darkGrayishBlue">
-                Heroku, Git, GitHub, GitLab, Firebase, Docker, Google Cloud
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- projects -->
-    <section id="projects">
-      <!-- container projects blocks -->
-      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
-        <!-- heading -->
-        <h2 class="text-4xl font-bold text-center mb-8 text-darkBlue">
-          My projects
-        </h2>
-        <!-- projects container -->
-        <div class="min-h-screen py-10 md:px-10 bg-veryLightGray">
-          <div
-            id="prj-container"
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 xl-grid-cols-4 gap-y-8 gap-x-6 bg-veryLightGray"
-          >
-            <!-- dinamically rendered projects by js -->
+    </div>
+  </section>
+  <!-- projects -->
+  <section id="projects">
+    <!-- container projects blocks -->
+    <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+      <!-- heading -->
+      <h2 class="text-4xl font-bold text-center mb-8 text-darkBlue">
+        My projects
+      </h2>
+      <!-- projects container -->
+      <div class="min-h-screen py-10 md:px-10 bg-veryLightGray">
+        <div id="prj-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 xl-grid-cols-4 gap-y-8 gap-x-6 bg-veryLightGray">
+          <!-- dinamically rendered projects by js -->
         </div>
         <div class="my-16">
           <!-- Button -->
-          <a
-            href="#home"
-            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-            >Go up</a
-          >
+          <a href="#home" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Go
+            up</a>
+        </div>
+        <div id="clientInfo"></div>
+      </div>
+  </section>
+  <!-- call to action section -->
+  <section id="cta" class="bg-brightRed">
+    <!-- flex container -->
+    <div
+      class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+      <!-- heading -->
+      <div class="h2 text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"
+        id="footer-message">
+        happy <span class="text-darkBlue">coding</span>
+      </div>
+      <!-- Button -->
+      <div>
+        <a href="#projects"
+          class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900">Back to
+          projects</a>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-veryDarkBlue">
+    <!-- flex container -->
+    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- logo and social links -->
+      <div
+        class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+        <div class="mx-auto my-6 text-center text-white copyright md:hidden"></div>
+        <!-- logo -->
+        <div id="contact">
+          <img src="img/logo-white.svg" alt="" class="h-8" />
+        </div>
+        <!-- social links container -->
+        <div class="flex justify-center space-x-4">
+          <!-- link1 -->
+          <a href="https://github.com/tarcea" target="_blank"><i
+              class="fab fa-github text-white hover:text-brightRed text-3xl"></i></a>
+          <!-- link2 -->
+          <a href="https://gitlab.com/tarcea" target="_blank"><i
+              class="fab fa-gitlab text-white hover:text-brightRed text-3xl"></i></a>
+          <!-- link3 -->
+          <a href="https://www.instagram.com/ghtarcea/" target="_blank"><i
+              class="fab fa-instagram text-white hover:text-brightRed text-3xl"></i></a>
+          <!-- link4 -->
+          <a href="https://www.facebook.com/gheorghe.tarcea" target="_blank"><i
+              class="fab fa-facebook text-white hover:text-brightRed text-3xl"></i></a>
+          <!-- link5 -->
+          <a href="https://www.linkedin.com/in/gheorghe-tarcea" target="_blank"><i
+              class="fab fa-linkedin text-white hover:text-brightRed text-3xl"></i></a>
+          <!-- link6 -->
+          <a href="mailto:contact@gheorghetarcea.com" target="_blank"><i
+              class="fas fa-envelope-square text-white hover:text-brightRed text-3xl"></i></a>
         </div>
       </div>
-    </section>
-    <!-- call to action section -->
-    <section id="cta" class="bg-brightRed">
-      <!-- flex container -->
-      <div
-        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
-      >
-        <!-- heading -->
-        <div
-          class="h2 text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left" id="footer-message"
-        >
-          happy <span class="text-darkBlue">coding</span>
+      <!--  list container -->
+      <div class="flex justify-around space-x-32">
+        <div class="flex flex-col space-y-3 text-white">
+          <a href="#home" class="hover:text-brightRed">Home</a>
+          <a href="#about" class="hover:text-brightRed">About</a>
+          <a href="#projects" class="hover:text-brightRed">Projects</a>
+
         </div>
-        <!-- Button -->
-        <div>
-          <a
-            href="#projects"
-            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
-            >Back to projects</a
-          >
+        <div class="flex flex-col space-y-3 text-white">
+          <!-- <a href="#projects" class="hover:text-brightRed">Projects</a> -->
+          <a href="#stack" class="hover:text-brightRed">TechStack</a>
         </div>
       </div>
-    </section>
-    <!-- footer -->
-    <footer class="bg-veryDarkBlue">
-      <!-- flex container -->
-      <div
-        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
-      >
-        <!-- logo and social links -->
-        <div
-          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
-        >
-          <div
-            class="mx-auto my-6 text-center text-white copyright md:hidden"
-          ></div>
-          <!-- logo -->
-          <div id="contact">
-            <img src="img/logo-white.svg" alt="" class="h-8" />
-          </div>
-          <!-- social links container -->
-          <div class="flex justify-center space-x-4">
-            <!-- link1 -->
-            <a href="https://github.com/tarcea" target="_blank"
-              ><i
-                class="fab fa-github text-white hover:text-brightRed text-3xl"
-              ></i
-            ></a>
-            <!-- link2 -->
-            <a href="https://gitlab.com/tarcea" target="_blank"
-              ><i
-                class="fab fa-gitlab text-white hover:text-brightRed text-3xl"
-              ></i
-            ></a>
-            <!-- link3 -->
-            <a href="https://www.instagram.com/ghtarcea/" target="_blank"
-              ><i
-                class="fab fa-instagram text-white hover:text-brightRed text-3xl"
-              ></i
-            ></a>
-            <!-- link4 -->
-            <a href="https://www.facebook.com/gheorghe.tarcea" target="_blank"
-              ><i
-                class="fab fa-facebook text-white hover:text-brightRed text-3xl"
-              ></i
-            ></a>
-            <!-- link5 -->
-            <a
-              href="https://www.linkedin.com/in/gheorghe-tarcea"
-              target="_blank"
-              ><i
-                class="fab fa-linkedin text-white hover:text-brightRed text-3xl"
-              ></i
-            ></a>
-            <!-- link6 -->
-            <a href="mailto:contact@gheorghetarcea.com" target="_blank"
-              ><i
-                class="fas fa-envelope-square text-white hover:text-brightRed text-3xl"
-              ></i
-            ></a>
-          </div>
-        </div>
-        <!--  list container -->
-        <div class="flex justify-around space-x-32">
-          <div class="flex flex-col space-y-3 text-white">
-            <a href="#home" class="hover:text-brightRed">Home</a>
-            <a href="#about" class="hover:text-brightRed">About</a>
-            <a href="#projects" class="hover:text-brightRed">Projects</a>
-            
-          </div>
-          <div class="flex flex-col space-y-3 text-white">
-            <!-- <a href="#projects" class="hover:text-brightRed">Projects</a> -->
-            <a href="#stack" class="hover:text-brightRed">TechStack</a>
-          </div>
-        </div>
-        <!-- input container -->
-        <div class="flex flex-col justify-between">
-          <!-- <form>
+      <!-- input container -->
+      <div class="flex flex-col justify-between">
+        <!-- <form>
             <div class="flex space-x-3">
               <input
                 type="text"
@@ -541,9 +398,10 @@
               </button>
             </div>
           </form> -->
-          <div class="hidden text-white copyright md:block"></div>
-        </div>
+        <div class="hidden text-white copyright md:block"></div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

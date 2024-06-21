@@ -25,6 +25,8 @@ const messages = [
   ['be', 'kind'],
   ['show', 'empathy'],
   ['practice makes', 'perfect'],
+  ['have you tried turning it off', 'and on again'],
+  ['did you try turning it off', 'and on again']
 ];
 
 const generateRandomNumber = (max) => {
@@ -96,9 +98,8 @@ fetch('../projects.json')
       <div
         class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300 relative"
       >${`
-      <a href=${
-        showLiveIcon ? project.liveUrl[0] : project.githubUrl
-      } target="_new">
+      <a href=${showLiveIcon ? project.liveUrl[0] : project.githubUrl
+        } target="_new">
           <img
             src=${`../img/${project.projectImage}`}
             alt=""
@@ -125,27 +126,53 @@ fetch('../projects.json')
           <a href=${project.githubUrl} target="_new"
             >
             <i
-              class="fa-brands fa-${
-                project.repo
-              } text-2xl text-darkBlue hover:text-brightRed"
+              class="fa-brands fa-${project.repo
+        } text-2xl text-darkBlue hover:text-brightRed"
             ></i
           >
           </a>
           <span class="w-1 h-8 px-4"></span>
-          ${
-            showLiveIcon
-              ? `
+          ${showLiveIcon
+          ? `
           <a href=${project.liveUrl[0]} target="_new"
           ><i
             class="fas fa-globe text-2xl text-darkBlue hover:text-brightRed"
           ></i
         ></a>
           `
-              : ''
-          }
+          : ''
+        }
           
         </div>
       </div>
       `;
     });
+  });
+
+// get info based on the client IP
+
+const parseData = (data) => {
+  let r = '';
+  const keys = Object.keys(data);
+  keys.forEach((key) => {
+    r += `
+      <li><b>${key}:</b> <em>${JSON.stringify(data[key])}</em></li>
+      `;
+  });
+  return r;
+};
+
+const clientInfo = document.getElementById('clientInfo');
+
+fetch('https://api.ipify.org?format=json')
+  .then((response) => response.json())
+  .then((data) =>
+    fetch(`https://wakeful-bronze-beret.glitch.me/?ip=${data.ip}`)
+  )
+  .then((resp) => resp.json())
+  .then((d) => {
+    console.log(d.data.emoji_flag)
+    clientInfo.innerHTML = `
+          ${d.data.emoji_flag}
+          `;
   });
