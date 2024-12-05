@@ -26,7 +26,8 @@ const messages = [
   ['show', 'empathy'],
   ['practice makes', 'perfect'],
   ['have you tried turning it off', 'and on again'],
-  ['did you try turning it off', 'and on again']
+  ['did you try turning it off', 'and on again'],
+  [`it’s not a bug,`, `it’s a feature`]
 ];
 
 const generateRandomNumber = (max) => {
