@@ -168,7 +168,7 @@ const clientInfo = document.getElementById('clientInfo');
 fetch('https://api.ipify.org?format=json')
   .then((response) => response.json())
   .then((data) =>
-    fetch(`https://wakeful-bronze-beret.glitch.me/?ip=${data.ip}`)
+    fetch(`http://tarcea.zapto.org:3005/?ip=${data.ip}`)
   )
   .then((resp) => resp.json())
   .then((d) => {
