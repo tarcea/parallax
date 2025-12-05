@@ -173,7 +173,7 @@ fetch('https://api.ipify.org?format=json')
   )
   .then((resp) => resp.json())
   .then((d) => {
-    console.log(d)
+    // console.log(d)
     // ${d.emoji_flag}
     clientInfo.innerHTML = `
           ${d.data.emoji_flag}
