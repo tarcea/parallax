@@ -164,18 +164,19 @@ const parseData = (data) => {
 };
 
 const clientInfo = document.getElementById('clientInfo');
+const APIKEY = 'a7d27ecf56b9671c1b3bb36e4b8be5ed9d93624686736ecf0c4f102c'
 
 fetch('https://api.ipify.org?format=json')
   .then((response) => response.json())
   .then((data) =>
-    fetch(`https://tarcea.zapto.org/aipi?ip=${data.ip}`)
-    // fetch(`https://api.ipdata.co/${data.ip}?api-key=${APIKEY}`)
+    // fetch(`https://tarcea.zapto.org/aipi?ip=${data.ip}`)
+    fetch(`https://api.ipdata.co/${data.ip}?api-key=${APIKEY}`)
   )
   .then((resp) => resp.json())
   .then((d) => {
     // console.log(d)
-    // ${d.emoji_flag}
+    // ${d.data.emoji_flag}
     clientInfo.innerHTML = `
-          ${d.data.emoji_flag}
+    ${d.emoji_flag}
           `;
   });
